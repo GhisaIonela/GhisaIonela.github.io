@@ -1,9 +1,216 @@
+<!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
         <title>
-            Portofoliu Ghișa Ionela
+            Ghișa Ionela
         </title>
+        <script src="https://kit.fontawesome.com/6f57b1fb42.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="./script.js"></script>
+        <script>translate_page("en");</script>
     </head>
+
     <body>
+        <!-- <svg id="fader"></svg> -->
+        <div class="tab">
+            <button id="CV_tab" class="tablinks" onclick="open_tab(id, 'CV')" text>CV</button>
+            <button id="PROJECTS_tab" class="tablinks" onclick="open_tab(id, 'PROJECTS')" text>PROIECTE</button>
+            <ul class="language_selector" id="language_selector">
+                <p id="language_selector_label" text>Limbă</p>
+                <li class="lang_button" onclick="translate_page('en');">
+                    EN 
+                    <!-- <img src="./images/en_icon.png"> -->
+                </li>
+                <li class="lang_button" onclick="translate_page('ro');">
+                    RO 
+                    <!-- <img src="./images/ro_icon.png"> -->
+                </li>
+            </ul>
+        </div>
+
+        <a class="dwd_cv" href="cv_ghisa_ionela_dumitrita.pdf" download="CV_GHISA_IONELA_DUMITRITA">
+            <img src="./media/pdf-file.png">
+            <p>
+                GET MY RESUME
+            </p>
+        </a>
+
+        <div id="CV" class="tabcontent CV">
+            <div class="cv_section">
+                <h2 id="cv_section_1" text>Educație și formare profesională</h2>
+                <div class="cv_item">
+                    <p id="cv_s1i1" text>2020 - 2023 <br> Cluj - Napoca <br> România</p>
+                    <span>
+                        <p id="cv_s1i1p1" text>Universitatea Babeș - Bolyai <br> Facultatea de matematică și informatică</p>
+                        <p class="cv_time_period">2020 - 2023 <br> Cluj - Napoca, România</p>
+                        <p id="cv_s1i1p2" text><b>Domeniu de studiu: </b> Matematică și Informatică</p>
+                    </span>
+                </div>
+                <div class="cv_item">
+                    <p id="cv_s1i2" text>2016 - 2020 <br> Baia Mare <br> România</p>
+                    <span>
+                        <p id="cv_s1i2p1" text>Colegiul Național "Vasile Lucaciu"</p>
+                        <p id="cv_s1i2p2" text><b>Domeniu: </b> Matematică și Informatică</p>
+                    </span>
+                </div>
+            </div>
+            <div class="cv_section">
+                <h2 id="cv_section_2" text>Experiență profesională</h2>
+                <div class="cv_item">
+                    <p id="cv_s2i1" text>02.09.2023 &#9488;<br>31.01.2024 &#9496;<br> Baia Mare <br> România</p>
+                    <span>
+                        <p id="cv_s2i1p1" text>Dezvoltator Software</p>
+                        <p>SELECTSOFT S.R.L.</p>
+                        <p id="cv_s2i1p3" text> - am scris cod<br>
+                            - am testat aplicatia<br>
+                            - am realizat documentatii<br>
+                            - am participat la dezvoltarea aplicatiei frontend si backend
+                        </p>
+                    </span>
+                </div>
+            </div>
+            <div class="cv_section">
+                <h2 id="cv_section_3" text>Competențe lingvistice</h2>
+                <div class="cv_item lang">
+                    <p id="cv_s3i2" text>Română</p>
+                    <span>
+                        <p>
+                            limbă maternă
+                        </p>
+                    </span>
+                </div>
+                <div class="cv_item lang">
+                    <p id="cv_s3i1" text>Engleză</p>
+                    <span>
+                        <p>
+                            comprehensiune orală: <b> C1 </b><br>
+                            citit: <b>B2</b><br>
+                            exprimare scrisă: <b>B2</b><br>
+                            conversație: <b>B2</b><br>
+                            scirs: <b>B2</b>
+                        </p>
+                    </span>
+                </div>
+                <!-- <div class="cv_lingv">
+                    <div class="cv_item lang_skill">
+                        <p id="cv_s3i1" text>Engleză</p>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                    </div>
+                    <div class="cv_item lang_skill">
+                        <p id="cv_s3i2" text>Română</p>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                        <span class="dot filled"></span>
+                    </div>
+                </div> -->
+            </div>
+            <div class="cv_section">
+                <h2 id="cv_section_4" text>Competențe digitale</h2>
+                <div class="cv_item skill">
+                    <p id="cv_s4i1" text>Programare</p>
+                    <span>
+                        <p id="cv_s4iip1" text>
+                            <b>- Front-end - </b><br>
+                            HTML | CSS | jQuery <br>
+                            <b>- Back-end -</b><br>
+                            C++ | Java | Python | SQL | X86Assembly | Clisp | Prolog | GDScript
+                        </p>
+                    </span>
+                </div>
+                <div class="cv_item skill">
+                    <p id="cv_s4i2" text>Design digital</p>
+                    <span>
+                        <p id="cv_s4i2p1" text>Proficiență în utilizarea instrumentelor de grafică digitală. Am lucrat în aplicații precum Krita și Clip Studio Paint pentru grafică raster și Inkspape pentru grafică vectorială.</p>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div id="PROJECTS" class="tabcontent projects">
+            <p>My projects</p>
+            <div class="project_categories">
+                <button>
+                    <img src="./media/4421964.jpg">
+                    <h1>
+                        Aps
+                    </h1>
+                </button>
+                <button>
+                    3D Moddeling
+                </button>
+                <button>
+                    Illustrations
+                </button>
+            </div>
+
+            <div class="projects_container">
+                <div class="project_section cookpedia">
+                    <video class="project_video" controls>
+                        <source src="media/cookpedia.mp4" type="video/mp4">
+                        Your browser does not support the video tag. <!-- Text to be shown incase browser doesnt support html5 -->
+                    </video>
+                    <div class="project_description">
+                        <h1>
+                            Cookpedia
+                        </h1>
+                        <h2>
+                            This project is a webpage for posting recipes and for creating your own cookbook.
+                        </h2>
+                    </div>
+                </div>
+    
+                <div class="project_section chess">
+                    <div class="project_description">
+                        <h1>
+                            Chess
+                        </h1>
+                        <h2>
+                            This project is a webpage for posting recipes and for creating your own cookbook.
+                        </h2>
+                    </div>
+                    <video class="project_video" controls>
+                        <source src="media/chess.mp4" type="video/mp4">
+                        Your browser does not support the video tag. <!-- Text to be shown incase browser doesnt support html5 -->
+                    </video>
+                </div>
+            </div>
+
+            <div class="3dmodeling_container">
+                <img class="model3d" src="media/3dmodelling/1.jpg">
+                <img class="model3d" src="media/3dmodelling/2.jpg">
+                <img class="model3d" src="media/3dmodelling/3.jpg">
+                <img class="model3d" src="media/3dmodelling/4.jpg">
+                <img class="model3d" src="media/3dmodelling/5.jpg">
+                <img class="model3d" src="media/3dmodelling/6.jpg">
+                <img class="model3d" src="media/3dmodelling/7.jpg">
+                <img class="model3d" src="media/3dmodelling/8.jpg">
+                <img class="model3d" src="media/3dmodelling/9.jpg">
+                <img class="model3d" src="media/3dmodelling/10.jpg">
+                <img class="model3d" src="media/3dmodelling/11.jpg">
+                <img class="model3d" src="media/3dmodelling/CatSculp.jpg">
+                <img class="model3d" src="media/3dmodelling/planet.jpg">
+                <img class="model3d" src="media/3dmodelling/bucatarie_tina2copyjpg.jpg">
+            </div>
+
+            <div class="illustrations_container">
+                <img class="illustration" src="media/tshirt.png">
+                <img class="illustration" src="media/tshirt2.png">
+                <img class="illustration sea" src="media/sea.jpg">
+                <img class="illustration" src="media/drawing3.5.jpg">
+                <img class="illustration" src="media/drawing3.9.jpg">
+                <img class="illustration" src="media/PhoneBoxLogo.png">
+                <img class="illustration" src="media/Illustration.png">
+                <img class="illustration" src="media/Illustration5.png">
+                <img class="illustration" src="media/portret.jpg">
+            </div>
+        </div>
     </body>
 </html>

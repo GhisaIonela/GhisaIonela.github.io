@@ -1,0 +1,74 @@
+{
+    "language_selector_label" : {
+        "en" : "Language",
+        "ro" : "Limbă"
+    },
+    "CV_tab" : {
+        "en" : "RESUME",
+        "ro" : "CV"
+    },
+    "PROJECTS_tab" : {
+        "en" : "PROJECTS",
+        "ro" : "PROIECTE"
+    },
+    "cv_section_1" : {
+        "en" : "Education and training",
+        "ro" : "Educație și formare profesională"
+    },
+    "cv_s1i1" : {
+        "en" : "2020 - 2023 <br> Cluj - Napoca <br> Romania",
+        "ro" : "2020 - 2023 <br> Cluj - Napoca <br> România"
+    },
+    "cv_s1i1p1" : {
+        "en" : "Babeș - Bolyai University <br> Faculty of Mathematics and Computer Science",
+        "ro" : "Universitatea Babeș - Bolyai <br> Facultatea de Matematică și Informatică" 
+    },
+    "cv_s1i1p2" : {
+        "en" : "<b>Field of study: </b>Mathematics and Computer science", 
+        "ro" : "<b>Domeniu de studiu: </b> Matematică și Informatică"
+    },
+    "cv_s1i2" : {
+        "en" : "2016 - 2020 <br> Baia Mare <br> Romania",
+        "ro" : "2016 - 2020 <br> Baia Mare <br> România"
+    },
+    "cv_s1i2p1" : {
+        "en" : "Vasile Lucaciu National College",
+        "ro" : "Colegiul Național \"Vasile Lucaciu\""
+    },
+    "cv_s1i2p2" : {
+        "en" : "<b>Field of study: </b>Mathematics and Computer science", 
+        "ro" : "<b>Domeniu de studiu: </b> Matematică și Informatică"
+    },
+    "cv_section_2" : {
+        "en" : "Work experience",
+        "ro" : "Experiență profesională"
+    },
+    "cv_s2i1" : {
+        "en" : "02.09.2023 &#9488;<br>31.01.2024 &#9496;<br> Baia Mare <br> Romania",
+        "ro" : "02.09.2023 &#9488;<br>31.01.2024 &#9496;<br> Baia Mare <br> România"
+    },
+    "cv_s2i1p1" : {
+        "en" : "Software Developer",
+        "ro" : "Dezvoltator Software"
+    },
+    "cv_s2i1p3" : {
+        "en" : "",
+        "ro" : ""
+    },
+    "cv_section_3" : {
+        "en" : "Language skills",
+        "ro" : "Compentențe lingvistice"
+    },
+    "cv_s3i1" : {
+        "en" : "English",
+        "ro" : "Engleză"
+    },
+    "cv_s3i2" : {
+        "en" : "Romanian",
+        "ro" : "Română"
+    },
+    "cv_section_4" : {
+        "en" : "Digital skills",
+        "ro" : "Compentențe digitale"
+    }
+}

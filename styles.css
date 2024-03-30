@@ -1,0 +1,386 @@
+:root {
+    /* --dark-1: #2F4858; */
+    --dark-1: #24343d;
+    --dark-1-2: #283e4b;
+    --dark-1-3: #1a2329;
+    --dark-2: #296574;
+    --dark-3: #629C86;
+    --light-1: #EAFEF7;
+    --light-2: #f5fdf9;
+    --accent-1: #DEB887;
+    --accent-2: #A5D782;
+    --accent-3: #191f24;
+}
+
+.html, body {
+    background: var(--dark-1);
+    color: var(--light-1);
+    transition: 1s;
+    animation: fadeEffect 1s;
+}
+
+#fader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    pointer-events: none;
+    background: var(--dark-1);
+    animation-duration: 300ms;
+    animation-timing-function: ease-in-out;
+}
+
+#fader.fade-out {
+    opacity: 0;
+    animation-name: fade-out;
+}
+
+#fader.fade-in {
+    opacity: 1;
+    animation-name: fade-in;
+}
+
+@keyframes fade-out {
+    from { opacity: 1 }
+      to { opacity: 0 }
+}
+
+@keyframes fade-in {
+    from { opacity: 0 }
+      to { opacity: 1 }
+}
+
+.language_selector {
+    overflow: hidden;
+    margin: auto;
+    width: fit-content;
+    padding: 0;
+    margin-right: 0;
+    text-align: center;
+    height: 100%;
+}
+
+.language_selector p {
+    padding: 0px 10px 0px;
+    min-width: 70px;
+    margin: 0;
+    text-align: center;
+}
+
+.language_selector li {
+    display: inline;
+}
+
+/* Style the tab */
+.tab {
+    /* overflow: hidden; */
+    border-bottom: 2px solid var(--light-1);
+    display: inline;
+    width: 100%;
+    height: 5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: var(--dark-1-2);
+}
+  
+  /* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    position: relative;
+    color: var(--light-1);
+    font-weight: 700;
+    min-width: 100px;
+    height: 100%;
+}
+
+.tab button.active {
+    background-color: var(--light-1);
+    color: var(--dark-1);
+}
+  
+.tab button:hover {
+    background-color: var(--dark-1-3);
+    color: var(--light-1);
+}
+
+.tab button.active:hover {
+    background-color: var(--light-2);
+    color: var(--dark-1);
+}
+  
+.tabcontent {
+    display: none;
+    padding: 12px;
+    margin: auto;
+    background-color: var(--dark-1-3);
+    transform: translateY(5%);
+}
+
+.tabcontent.CV {
+    width: 50%;
+}
+
+.tabcontent {
+    animation: fadeEffect 1s;
+}
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.lang_button {
+    width: fit-content;
+}
+
+.lang_button:hover {
+    cursor: pointer;
+}
+
+.cv_section {
+    padding: 0px 10px 0px;
+}
+
+.cv_time_period {
+    display: none;
+}
+
+.cv_item {
+    margin: auto;
+}
+
+.cv_item > p{
+    display: inline-block;
+    padding: 0px 10px 0px;
+    min-width: 100px;
+    text-align: right;
+    vertical-align : top;
+    width: 30%;
+}
+
+.cv_item span {
+    border-left: 2px solid var(--accent-2);
+    display: inline-block;
+    padding: 0px 10px 0px;
+    width: 60%;
+}
+
+.cv_item span p:first-child {
+    color: var(--accent-1);
+    font-size: large;
+    font-weight: 600;
+}
+
+.cv_item.lang span {
+    max-width: fit-content;
+}
+
+.dot {
+    width: 100px;
+    height: 100px;
+    background: var(--dark-2);
+    border-radius: 50%;
+    margin: 1px;
+    border: 0px;
+}
+
+.dot.filled {
+    background-color: var(--accent-1);
+    border: 0px;
+}
+
+.cv_item.skill span {
+    padding: 10px 10px 10px;
+}
+
+.cv_item.skill span p {
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    display: inline;
+    line-height: 2;
+}
+
+.cv_item.lang span p {
+    text-align: right;
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.dwd_cv {
+    border-radius: 4%;
+    right: 0;
+    padding: 10px;
+    transition: 200ms;
+    position: fixed;
+    float: left;
+    float: inline-end;
+    z-index: 1000;
+    display: inline;
+    background: var(--accent-2);
+    color: var(--accent-3);
+    vertical-align: middle;
+    text-decoration-line: none;
+    font-weight: bold;
+    transform: translateY(100%);
+}
+
+.dwd_cv img {
+    width: 24px;
+    height: auto;
+    display: inline;
+    vertical-align: middle;
+}
+
+.dwd_cv p {
+    display: inline;
+    vertical-align: middle;
+}
+
+.dwd_cv:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px var(--accent-2);
+}
+
+/* PROJECTS */
+
+.tabcontent.projects {
+    margin: 0px;
+    padding: 0px;
+}
+
+.project_categories {
+    display: grid;
+    grid-template-columns: 6fr 6fr 6fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: stretch;
+    align-items: center;
+    width: 100%;
+}
+
+.project_categories button {
+    font-size: xx-large;
+    font-weight: 700;
+    width: 50%;
+    aspect-ratio: 1/1;
+    background: var(--accent-2);
+    position: relative;
+    border-radius: 8%;
+    transition: 300ms;
+    border: 0px;
+    padding: 0px;
+}
+
+.project_categories button:hover {
+    cursor: pointer;
+    color: var(--accent-2);
+    background: var(--dark-1-2);
+    text-shadow: 0 0 10px var(--accent-2);
+}
+
+.project_categories button img {
+    width: 0%;
+    height: 50%;
+    justify-content: stretch;
+    opacity: 50%;
+    border-radius: 8%;
+}
+
+.project_categories button h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -75%);
+}
+
+.projects_container {
+    width: 100%;
+}
+
+.project_section {
+    width: 100%;
+}
+
+.project_section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    vertical-align: middle;
+    justify-content: stretch;
+    width: 100%;
+}
+
+.project_section.cookpedia {
+    background: rgb(230, 188, 183);
+    color: var(--dark-1-3);
+}
+
+.project_video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.modeling3d_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.model3d {
+    max-width: 40%;
+}
+
+.illustrations_container {
+    display: inline;
+    justify-content: stretch;
+}
+
+.illustrations_container img {
+    max-width: 30%;
+}
+
+.illustration.sea {
+    max-width: 70%;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .tabcontent.CV {
+        width: 90%;
+    }
+
+    .cv_item > p {
+        display: none;
+    }
+
+    .cv_item span{
+        max-width: 100%;
+    }
+
+    .cv_time_period {
+        display: block;
+    }
+
+    .project_section { 
+        grid-template-columns: 1fr; 
+    }
+
+    .project_video {
+        width: 100%;
+    }
+
+}
+
+
