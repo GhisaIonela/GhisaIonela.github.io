@@ -26,11 +26,16 @@ function open_tab(button_id, tab_id) {
     $(".tab > button").removeClass('active');
 
     $("#" + tab_id).show();
-    $("#" + button_id).addClass("active");
+
+    if (button_id != "") {
+        $("#" + button_id).addClass("active");
+    }
 
     if (tab_id == 'CV'){
         $(".dwd_cv").show();
     } else {
         $(".dwd_cv").hide();
     }
+
+
 }
