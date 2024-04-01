@@ -1,12 +1,12 @@
 // import text from './translations.json' assert {type:"json"};
-const language = "en"
+var language = "en"
 var text = {}
 
 $(document).ready(function(){
     $.getJSON("./translations.json", function(data){
         text = data;
     });
-    translate_page("ro");
+    selectLanguage("ro", true);
     open_tab("CV_tab", "CV");
 });
 
@@ -36,6 +36,29 @@ function open_tab(button_id, tab_id) {
     } else {
         $(".dwd_cv").hide();
     }
+}
 
+function selectLanguage(lang, is_init = false) {
+    language = lang;
+    $(".language_switch").removeClass("active");
+    var container = ""
+    switch(lang) {
+        case "ro":
+            container = ".language_switch:first";
+            break;
+        case "en":
+            container = ".language_switch:last";
+            break;
+        default:
+            container = ".language_switch:first";
+            break;
+    };  
 
+    $(container).addClass("active");
+    if (!is_init) {
+        $(container + "> span:first").addClass("strech_string_" + lang);
+        setTimeout(() => { $(container + "> span:first").removeClass("strech_string_" + lang); }, 300);
+    }
+
+    translate_page(lang);
 }

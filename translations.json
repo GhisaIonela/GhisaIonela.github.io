@@ -1,4 +1,12 @@
 {
+    "lang_switch_ro" : {
+      "en" : "Romanian",
+      "ro" : "Română"  
+    },
+    "lang_switch_en" : {
+        "en" : "English",
+        "ro" : "Engleză"
+    },
     "language_selector_label" : {
         "en" : "Language",
         "ro" : "Limbă"

@@ -3,6 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles_home.css">
         <title>
             Ghișa Ionela
         </title>
@@ -13,22 +14,57 @@
     </head>
 
     <body>
-        <!-- <svg id="fader"></svg> -->
+        <span class="language_switch ro">
+            <span></span>
+            <span></span>
+            <p id="lang_switch_ro" onclick="selectLanguage('ro');" text>Romanian</p>
+            <span>
+                <img draggable="false" src="media/icons/ro.svg" onclick="selectLanguage('ro');">
+            </span>
+        </span>
+        <span class="language_switch en">
+            <span></span>
+            <span></span>
+            <p id="lang_switch_en" onclick="selectLanguage('en');" text>English</p>
+            <span>
+                <img draggable="false" src="media/icons/uk.svg" onclick="selectLanguage('en');">
+            </span>
+        </span>
+        <!-- <div id="home_page">
+            <span class="language_switch ro">
+                <span></span>
+                <span></span>
+                <span>
+                    <img draggable="false" src="media/icons/ro.svg" onclick="selectLanguage('.language_switch:first', 'ro');">
+                </span>
+                <p id="lang_switch_ro" onclick="selectLanguage('.language_switch:first', 'ro');" text>Romanian</p>
+            </span>
+            <span class="language_switch en">
+                <span></span>
+                <span></span>
+                <span>
+                    <img draggable="false" src="media/icons/uk.svg" onclick="selectLanguage('.language_switch:last', 'en');">
+                </span>
+                <p id="lang_switch_en" onclick="selectLanguage('.language_switch:last', 'en');" text>English</p>
+            </span>
+
+            <div id="home-center-content">
+                <div id="profile_img_container">
+                    <span id="profile_img"></span>   
+                </div>
+                <h1>Ghișa Ionela</h1>
+                <nav id="main_nav">
+                    <a>CV</a>
+                    <a>Proiecte</a>
+                </nav>
+            </div>
+        </div> -->
+
+
         <div class="tab">
             <button id="CV_tab" class="tablinks" onclick="open_tab(id, 'CV')" text>CV</button>
             <button id="PROJECTS_tab" class="tablinks" onclick="open_tab(id, 'PROJECTS')" text>PROIECTE</button>
             <span style="background: var(--dark-1-3);"></span>
-            <ul class="language_selector" id="language_selector">
-                <p id="language_selector_label" text>Limbă</p>
-                <li class="lang_button" onclick="translate_page('en');">
-                    EN 
-                    <!-- <img src="./images/en_icon.png"> -->
-                </li>
-                <li class="lang_button" onclick="translate_page('ro');">
-                    RO 
-                    <!-- <img src="./images/ro_icon.png"> -->
-                </li>
-            </ul>
         </div>
 
         <a class="dwd_cv" href="cv_ghisa_ionela_dumitrita.pdf" download="CV_GHISA_IONELA_DUMITRITA">
@@ -97,24 +133,6 @@
                         </p>
                     </span>
                 </div>
-                <!-- <div class="cv_lingv">
-                    <div class="cv_item lang_skill">
-                        <p id="cv_s3i1" text>Engleză</p>
-                        <span class="dot filled"></span>
-                        <span class="dot filled"></span>
-                        <span class="dot filled"></span>
-                        <span class="dot filled"></span>
-                        <span class="dot filled"></span>
-                    </div>
-                    <div class="cv_item lang_skill">
-                        <p id="cv_s3i2" text>Română</p>
-                        <span class="dot filled"></span>
-                        <span class="dot filled"></span>
-                        <span class="dot filled"></span>
-                        <span class="dot filled"></span>
-                        <span class="dot filled"></span>
-                    </div>
-                </div> -->
             </div>
             <div class="cv_section">
                 <h2 id="cv_section_4" text>Competențe digitale</h2>
@@ -232,7 +250,5 @@
                 <img class="illustration" src="media/illustrations/Illustration5.png">
             </div>
         </div>
-
-        <!-- <footer class="footer"> Made by Ghișa Ionela</footer> -->
     </body>
 </html>
