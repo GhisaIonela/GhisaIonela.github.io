@@ -40,20 +40,9 @@ function open_tab(button_id, tab_id) {
 
 function selectLanguage(lang, is_init = false) {
     language = lang;
-    $(".language_switch").removeClass("active");
-    var container = ""
-    switch(lang) {
-        case "ro":
-            container = ".language_switch:first";
-            break;
-        case "en":
-            container = ".language_switch:last";
-            break;
-        default:
-            container = ".language_switch:first";
-            break;
-    };  
+    var container = ".language_switch." + lang
 
+    $(".language_switch").removeClass("active");
     $(container).addClass("active");
     if (!is_init) {
         $(container + "> span:first").addClass("strech_string_" + lang);
@@ -61,4 +50,14 @@ function selectLanguage(lang, is_init = false) {
     }
 
     translate_page(lang);
+}
+
+function closeNarrowMenu() {
+    $(".narrow_menu").removeClass("expanded");
+    $(".content").removeClass("shrink");
+}
+
+function openNarrowMenu() {
+    $(".narrow_menu").addClass("expanded");
+    $(".content").addClass("shrink");
 }

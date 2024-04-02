@@ -14,22 +14,75 @@
     </head>
 
     <body>
-        <span class="language_switch ro">
-            <span></span>
-            <span></span>
-            <p id="lang_switch_ro" onclick="selectLanguage('ro');" text>Romanian</p>
-            <span>
-                <img draggable="false" src="media/icons/ro.svg" onclick="selectLanguage('ro');">
+        <div class="narrow_menu">
+            <span class="language_switch ro">
+                <span></span>
+                <span></span>
+                <span>
+                    <img draggable="false" src="media/icons/ro.svg" onclick="selectLanguage('ro');">
+                </span>
+                <p id="lang_switch_ro" onclick="selectLanguage('ro');" text>Romanian</p>
             </span>
-        </span>
-        <span class="language_switch en">
-            <span></span>
-            <span></span>
-            <p id="lang_switch_en" onclick="selectLanguage('en');" text>English</p>
-            <span>
-                <img draggable="false" src="media/icons/uk.svg" onclick="selectLanguage('en');">
+            <span class="language_switch en">
+                <span></span>
+                <span></span>
+                <span>
+                    <img draggable="false" src="media/icons/uk.svg" onclick="selectLanguage('en');">
+                </span>
+                <p id="lang_switch_en" onclick="selectLanguage('en');" text>English</p>
             </span>
-        </span>
+
+            <div class="narrow-menu-header">
+                <img class="open-narrow-menu" draggable="false" src="media/icons/acoordion_menu.svg" onclick="openNarrowMenu();">
+                <img class="close-narrow-menu" draggable="false" src="media/icons/close.svg" onclick="closeNarrowMenu();">
+            </div>
+
+            <div class="link-container">
+                <div class="link-wrapper">
+                    <p>Ghișa Ionela</p>
+                    <a id="CV_tab" class="tablinks" onclick="open_tab(id, 'CV'); closeNarrowMenu();" text>CURRICULUM VITAE</a>
+                    <a id="PROJECTS_tab" class="tablinks" onclick="open_tab(id, 'PROJECTS'); closeNarrowMenu();" text>PROIECTE</a>
+                </div>
+            </div>
+
+            <!-- <div class="tab narrow">
+                <span>
+                    <a id="CV_tab" class="tablinks" onclick="open_tab(id, 'CV')" text>CV</a>
+                </span>
+                <span>
+                    <a id="PROJECTS_tab" class="tablinks" onclick="open_tab(id, 'PROJECTS')" text>PROIECTE</a>
+                </span> -->
+                <!-- <button  >CV</button> -->
+                <!-- <button >PROIECTE</button> -->
+                <!-- <span style="background: var(--dark-1-3);"></span> -->
+            <!-- </div> -->
+        </div>
+
+        <div class="wide_menu">
+            <span class="language_switch ro">
+                <span></span>
+                <span></span>
+                <span>
+                    <img draggable="false" src="media/icons/ro.svg" onclick="selectLanguage('ro');">
+                </span>
+                <p id="lang_switch_ro" onclick="selectLanguage('ro');" text>Romanian</p>
+            </span>
+            <span class="language_switch en">
+                <span></span>
+                <span></span>
+                <span>
+                    <img draggable="false" src="media/icons/uk.svg" onclick="selectLanguage('en');">
+                </span>
+                <p id="lang_switch_en" onclick="selectLanguage('en');" text>English</p>
+            </span>
+
+            <div class="tab wide">
+                <button id="CV_tab" class="tablinks" onclick="open_tab(id, 'CV')" text>CV</button>
+                <button id="PROJECTS_tab" class="tablinks" onclick="open_tab(id, 'PROJECTS')" text>PROIECTE</button>
+                <span style="background: var(--dark-1-3);"></span>
+            </div>
+        </div>
+
         <!-- <div id="home_page">
             <span class="language_switch ro">
                 <span></span>
@@ -61,194 +114,193 @@
         </div> -->
 
 
-        <div class="tab">
-            <button id="CV_tab" class="tablinks" onclick="open_tab(id, 'CV')" text>CV</button>
-            <button id="PROJECTS_tab" class="tablinks" onclick="open_tab(id, 'PROJECTS')" text>PROIECTE</button>
-            <span style="background: var(--dark-1-3);"></span>
-        </div>
-
-        <a class="dwd_cv" href="cv_ghisa_ionela_dumitrita.pdf" download="CV_GHISA_IONELA_DUMITRITA">
-            <img src="./media/pdf-file.png">
-            <p>
-                PDF
-            </p>
-        </a>
-
-        <div id="CV" class="tabcontent CV">
-            <div class="cv_section">
-                <h2 id="cv_section_1" text>Educație și formare profesională</h2>
-                <div class="cv_item">
-                    <p id="cv_s1i1" text>2020 - 2023 <br> Cluj - Napoca <br> România</p>
-                    <span>
-                        <p id="cv_s1i1p1" text>Universitatea Babeș - Bolyai <br> Facultatea de matematică și informatică</p>
-                        <p class="cv_time_period">2020 - 2023 <br> Cluj - Napoca, România</p>
-                        <p id="cv_s1i1p2" text><b>Domeniu de studiu: </b> Matematică și Informatică</p>
-                    </span>
-                </div>
-                <div class="cv_item">
-                    <p id="cv_s1i2" text>2016 - 2020 <br> Baia Mare <br> România</p>
-                    <span>
-                        <p id="cv_s1i2p1" text>Colegiul Național "Vasile Lucaciu"</p>
-                        <p class="cv_time_period">2016 - 2020 <br> Baia Mare, România</p>
-                        <p id="cv_s1i2p2" text><b>Domeniu: </b> Matematică și Informatică</p>
-                    </span>
-                </div>
-            </div>
-            <div class="cv_section">
-                <h2 id="cv_section_2" text>Experiență profesională</h2>
-                <div class="cv_item">
-                    <p id="cv_s2i1" text>02.09.2023 &#9488;<br>31.01.2024 &#9496;<br> Baia Mare <br> România</p>
-                    <span>
-                        <p id="cv_s2i1p1" text>Dezvoltator Software</p>
-                        <p class="cv_time_period">02.09.2023 - 31.01.2024 <br> Baia Mare, România</p>
-                        <p>SELECTSOFT S.R.L.</p>
-                        <p id="cv_s2i1p3" text> 
-                            - am scris cod<br>
-                            - am testat aplicatia<br>
-                            - am redactat documentații<br>
-                            - am participat la dezvoltarea aplicatiei frontend si backend
-                        </p>
-                    </span>
-                </div>
-            </div>
-            <div class="cv_section">
-                <h2 id="cv_section_3" text>Competențe lingvistice</h2>
-                <div class="cv_item lang">
-                    <p id="cv_s3i2" text>Română</p>
-                    <span>
-                        <p>
-                            limbă maternă
-                        </p>
-                    </span>
-                </div>
-                <div class="cv_item lang">
-                    <p id="cv_s3i1" text>Engleză</p>
-                    <span>
-                        <p>
-                            comprehensiune orală: <b> C1 </b><br>
-                            citit: <b>B2</b><br>
-                            exprimare scrisă: <b>B2</b><br>
-                            conversație: <b>B2</b><br>
-                            scirs: <b>B2</b>
-                        </p>
-                    </span>
-                </div>
-            </div>
-            <div class="cv_section">
-                <h2 id="cv_section_4" text>Competențe digitale</h2>
-                <div class="cv_item skill">
-                    <p id="cv_s4i1" text>Programare</p>
-                    <span>
-                        <p id="cv_s4iip1" text>
-                            <b>Limbaje de programare</b><br>
-                            C++ | Java | Python | HTML | CSS | JavaScript | SQL | X86Assembly | CLisp | Prolog | GDScript<br>
-                            <b>Paradigme de programare</b><br>
-                            Programare Orientată Obiect | Programare Logică | Programare Funcțională <br>
-                            <b>Baze de date</b><br>
-                            SQL Server | PostgreSQL
-                            <b>Instrumente de control a versiunilor</b>
-                            Github
-                            <b>Microsoft Office</b>
-                            Word | Excel | Power Point
-                        </p>
-                    </span>
-                </div>
-                <div class="cv_item skill">
-                    <p id="cv_s4i2" text>Design digital</p>
-                    <span>
-                        <p id="cv_s4i2p1" text>Proficiență în utilizarea instrumentelor pentru grafică digitală.</p>
-                    </span>
-                </div>
-            </div>
-        </div>
-
-        <div id="PROJECTS" class="tabcontent projects">
-            <div class="project_categories">
-                <button onclick="open_tab('', 'APPLICATIONS')">
-                    <h1>
-                        Applications
-                    </h1>
-                </button>
-                <button onclick="open_tab('', 'MODELLING3D')">
-                    <h1>
-                        3D Modelling
-                    </h1>
-                </button>
-                <button onclick="open_tab('', 'ILLUSTRATIONS')">
-                    <h1>
-                        Illustrations
-                    </h1>
-                </button>
-                
-            </div>
-
-        </div>
-
-        <div id="APPLICATIONS" class="tabcontent">
-            <div class="projects_container">
-                <div class="project_section cookpedia">
-                    <video class="project_video" controls>
-                        <source src="media/cookpedia.mp4" type="video/mp4">
-                        Your browser does not support the video tag. 
-                    </video>
-                    <div class="project_description">
-                        <h1>
-                            Cookpedia
-                        </h1>
-                        <h2>
-                            This project is a webpage for posting recipes and for creating your own cookbook.
-                        </h2>
+        <div class="content">
+            <a class="dwd_cv" href="cv_ghisa_ionela_dumitrita.pdf" download="CV_GHISA_IONELA_DUMITRITA">
+                <img src="./media/pdf-file.png">
+                <p>
+                    PDF
+                </p>
+            </a>
+    
+            <div id="CV" class="tabcontent CV">
+                <div class="cv_section">
+                    <h2 id="cv_section_1" text>Educație și formare profesională</h2>
+                    <div class="cv_item">
+                        <p id="cv_s1i1" text>2020 - 2023 <br> Cluj - Napoca <br> România</p>
+                        <span>
+                            <p id="cv_s1i1p1" text>Universitatea Babeș - Bolyai <br> Facultatea de matematică și informatică</p>
+                            <p class="cv_time_period">2020 - 2023 <br> Cluj - Napoca, România</p>
+                            <p id="cv_s1i1p2" text><b>Domeniu de studiu: </b> Matematică și Informatică</p>
+                        </span>
                     </div>
+                    <div class="cv_item">
+                        <p id="cv_s1i2" text>2016 - 2020 <br> Baia Mare <br> România</p>
+                        <span>
+                            <p id="cv_s1i2p1" text>Colegiul Național "Vasile Lucaciu"</p>
+                            <p class="cv_time_period">2016 - 2020 <br> Baia Mare, România</p>
+                            <p id="cv_s1i2p2" text><b>Domeniu: </b> Matematică și Informatică</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="cv_section">
+                    <h2 id="cv_section_2" text>Experiență profesională</h2>
+                    <div class="cv_item">
+                        <p id="cv_s2i1" text>02.09.2023 &#9488;<br>31.01.2024 &#9496;<br> Baia Mare <br> România</p>
+                        <span>
+                            <p id="cv_s2i1p1" text>Dezvoltator Software</p>
+                            <p class="cv_time_period">02.09.2023 - 31.01.2024 <br> Baia Mare, România</p>
+                            <p>SELECTSOFT S.R.L.</p>
+                            <p id="cv_s2i1p3" text> 
+                                - am scris cod<br>
+                                - am testat aplicatia<br>
+                                - am redactat documentații<br>
+                                - am participat la dezvoltarea aplicatiei frontend si backend
+                            </p>
+                        </span>
+                    </div>
+                </div>
+                <div class="cv_section">
+                    <h2 id="cv_section_3" text>Competențe lingvistice</h2>
+                    <div class="cv_item lang">
+                        <p id="cv_s3i2" text>Română</p>
+                        <span>
+                            <p>
+                                limbă maternă
+                            </p>
+                        </span>
+                    </div>
+                    <div class="cv_item lang">
+                        <p id="cv_s3i1" text>Engleză</p>
+                        <span>
+                            <p>
+                                comprehensiune orală: <b> C1 </b><br>
+                                citit: <b>B2</b><br>
+                                exprimare scrisă: <b>B2</b><br>
+                                conversație: <b>B2</b><br>
+                                scirs: <b>B2</b>
+                            </p>
+                        </span>
+                    </div>
+                </div>
+                <div class="cv_section">
+                    <h2 id="cv_section_4" text>Competențe digitale</h2>
+                    <div class="cv_item skill">
+                        <p id="cv_s4i1" text>Programare</p>
+                        <span>
+                            <p id="cv_s4iip1" text>
+                                <b>Limbaje de programare</b><br>
+                                C++ | Java | Python | HTML | CSS | JavaScript | SQL | X86Assembly | CLisp | Prolog | GDScript<br>
+                                <b>Paradigme de programare</b><br>
+                                Programare Orientată Obiect | Programare Logică | Programare Funcțională <br>
+                                <b>Baze de date</b><br>
+                                SQL Server | PostgreSQL
+                                <b>Instrumente de control a versiunilor</b>
+                                Github
+                                <b>Microsoft Office</b>
+                                Word | Excel | Power Point
+                            </p>
+                        </span>
+                    </div>
+                    <div class="cv_item skill">
+                        <p id="cv_s4i2" text>Design digital</p>
+                        <span>
+                            <p id="cv_s4i2p1" text>Proficiență în utilizarea instrumentelor pentru grafică digitală.</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+    
+            <div id="PROJECTS" class="tabcontent projects">
+                <div class="project_categories">
+                    <button onclick="open_tab('', 'APPLICATIONS')">
+                        <h1>
+                            Applications
+                        </h1>
+                    </button>
+                    <button onclick="open_tab('', 'MODELLING3D')">
+                        <h1>
+                            3D Modelling
+                        </h1>
+                    </button>
+                    <button onclick="open_tab('', 'ILLUSTRATIONS')">
+                        <h1>
+                            Illustrations
+                        </h1>
+                    </button>
+                    
                 </div>
     
-                <div class="project_section chess">
-                    <div class="project_description">
-                        <h1>
-                            Chess
-                        </h1>
-                        <h2>
-                            This project is a webpage for posting recipes and for creating your own cookbook.
-                        </h2>
+            </div>
+    
+            <div id="APPLICATIONS" class="tabcontent">
+                <div class="projects_container">
+                    <div class="project_section cookpedia">
+                        <video class="project_video" controls>
+                            <source src="media/cookpedia.mp4" type="video/mp4">
+                            Your browser does not support the video tag. 
+                        </video>
+                        <div class="project_description">
+                            <h1>
+                                Cookpedia
+                            </h1>
+                            <h2>
+                                This project is a webpage for posting recipes and for creating your own cookbook.
+                            </h2>
+                        </div>
                     </div>
-                    <video class="project_video" controls>
-                        <source src="media/chess.mp4" type="video/mp4">
-                        Your browser does not support the video tag. 
-                    </video>
+        
+                    <div class="project_section chess">
+                        <div class="project_description">
+                            <h1>
+                                Chess
+                            </h1>
+                            <h2>
+                                This project is a webpage for posting recipes and for creating your own cookbook.
+                            </h2>
+                        </div>
+                        <video class="project_video" controls>
+                            <source src="media/chess.mp4" type="video/mp4">
+                            Your browser does not support the video tag. 
+                        </video>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div id="MODELLING3D" class="tabcontent">
-            <div class="modeling3d_container">
-                <img class="model3d" src="media/3dmodelling/1.jpg">
-                <img class="model3d" src="media/3dmodelling/2.jpg">
-                <img class="model3d" src="media/3dmodelling/3.jpg">
-                <img class="model3d" src="media/3dmodelling/4.jpg">
-                <img class="model3d" src="media/3dmodelling/5.jpg">
-                <img class="model3d" src="media/3dmodelling/6.jpg">
-                <img class="model3d" src="media/3dmodelling/7.jpg">
-                <img class="model3d" src="media/3dmodelling/8.jpg">
-                <img class="model3d" src="media/3dmodelling/9.jpg">
-                <img class="model3d" src="media/3dmodelling/10.jpg">
-                <img class="model3d" src="media/3dmodelling/11.jpg">
-                <img class="model3d" src="media/3dmodelling/CatSculp.jpg">
-                <img class="model3d" src="media/3dmodelling/planet.jpg">
-                <img class="model3d" src="media/3dmodelling/bucatarie_tina2copyjpg.jpg">
+    
+            <div id="MODELLING3D" class="tabcontent">
+                <div class="modeling3d_container">
+                    <img class="model3d" src="media/3dmodelling/1.jpg">
+                    <img class="model3d" src="media/3dmodelling/2.jpg">
+                    <img class="model3d" src="media/3dmodelling/3.jpg">
+                    <img class="model3d" src="media/3dmodelling/4.jpg">
+                    <img class="model3d" src="media/3dmodelling/5.jpg">
+                    <img class="model3d" src="media/3dmodelling/6.jpg">
+                    <img class="model3d" src="media/3dmodelling/7.jpg">
+                    <img class="model3d" src="media/3dmodelling/8.jpg">
+                    <img class="model3d" src="media/3dmodelling/9.jpg">
+                    <img class="model3d" src="media/3dmodelling/10.jpg">
+                    <img class="model3d" src="media/3dmodelling/11.jpg">
+                    <img class="model3d" src="media/3dmodelling/CatSculp.jpg">
+                    <img class="model3d" src="media/3dmodelling/planet.jpg">
+                    <img class="model3d" src="media/3dmodelling/bucatarie_tina2copyjpg.jpg">
+                </div>
             </div>
-        </div>
-
-
-        <div id="ILLUSTRATIONS" class="tabcontent">
-            <div class="illustrations_container">
-                <img class="illustration" src="media/illustrations/tshirt.png">
-                <img class="illustration" src="media/illustrations/tshirt2.png">
-                <img class="illustration sea" src="media/illustrations/sea.jpg">
-                <img class="illustration" src="media/illustrations/drawing3.5.jpg">
-                <img class="illustration" src="media/illustrations/drawing3.9.jpg">
-                <img class="illustration" src="media/illustrations/PhoneBoxLogo.png">
-                <img class="illustration" src="media/illustrations/Illustration.png">
-                <img class="illustration" src="media/illustrations/Illustration5.png">
+    
+    
+            <div id="ILLUSTRATIONS" class="tabcontent">
+                <div class="illustrations_container">
+                    <img class="illustration" src="media/illustrations/tshirt.png">
+                    <img class="illustration" src="media/illustrations/tshirt2.png">
+                    <img class="illustration sea" src="media/illustrations/sea.jpg">
+                    <img class="illustration" src="media/illustrations/drawing3.5.jpg">
+                    <img class="illustration" src="media/illustrations/drawing3.9.jpg">
+                    <img class="illustration" src="media/illustrations/PhoneBoxLogo.png">
+                    <img class="illustration" src="media/illustrations/Illustration.png">
+                    <img class="illustration" src="media/illustrations/Illustration5.png">
+                </div>
             </div>
+
         </div>
+
+        
     </body>
 </html>

@@ -20,6 +20,9 @@
     margin: 0;
 }
 
+.narrow_menu {
+    display: none;
+}
 
 /*#region Home page*/
 #home-center-content {
@@ -77,12 +80,13 @@
     margin: 32px 0px;
 }
 
-/* #main_nav button {
-    all: unset;
-    width: 100%;
-    display: block;
-    background: var(--accent-3);
-} */
+.narrow_menu {
+    display: none;
+}
+
+.wide_menu {
+    display: inline;
+}
 
 /*#region Language switch*/
 .language_switch {
@@ -95,7 +99,7 @@
     width: fit-content;
     user-select: none; 
     vertical-align: middle;
-    right: 0;
+    left: 0;
 }
 
 .language_switch > * {
@@ -131,7 +135,7 @@
 
 .language_switch.ro {
     z-index: 11;
-    transform: translateX(-30px);
+    transform: translateX(30px);
 }
 
 .language_switch.en {
@@ -146,7 +150,7 @@
     cursor: pointer;
 }
 
-.language_switch > span:nth-child(2) {
+.language_switch > span:nth-child(1) {
     text-align: center;
     min-height: 42px;
     height: 100%;
@@ -177,7 +181,7 @@
     filter: unset;
 }
 
-.language_switch > span:nth-child(4) {
+.language_switch > span:nth-child(3) {
     all: unset;
     border-radius: 50%;
     border: 2px solid var(--accent-1);
@@ -433,7 +437,7 @@
     position: fixed;
     float: left;
     float: inline-end;
-    z-index: 1000;
+    z-index: 3;
     display: inline;
     background: var(--accent-2);
     color: var(--accent-3);
@@ -504,7 +508,7 @@
 }
 
 .project_categories button:nth-child(1) {
-    background-color: rgb(222, 184, 135, 0.25);
+    background-color: rgba(211, 205, 197, 0.25);
     background-blend-mode: soft-light;
     background-image: url("./media/cookpedia.gif");
     background-position: center;
@@ -534,7 +538,7 @@
 }
 
 .project_categories button:nth-child(3) {
-    background-color: rgb(222, 184, 135, 0.25);
+    background-color: rgba(216, 211, 206, 0.575);
     background-blend-mode: soft-light;
     background-image: url("./media/illustrations/tshirt2.png");
     background-position: center;
@@ -604,17 +608,197 @@
     max-width: 70%;
 }
 
-@media only screen and (max-width: 1000px) {
+
+
+@media only screen and (max-width: 600px) {
+    .wide_menu {
+        display: none;
+    }
+
+    .narrow_menu {
+        display: inline;
+        background: var(--dark-1-3);
+        z-index: 1000;
+        height: 62px;
+    }
+
+    .narrow-menu-header {
+        width: 100%; 
+        height: 62px;
+    }
+
+    .narrow-menu-header > img {
+        width: 42px; 
+        padding: 10px; 
+        float: right;
+    }
+
+    .narrow_menu .language_switch {
+        display: none;
+    }
+
+    .narrow_menu .link-container {
+        display: none;
+    }
+
+    .narrow_menu .close-narrow-menu {
+        display: none;
+    }
+
+
+
+    .narrow_menu.expanded {
+        width: 100%;
+        height: 100%;
+        
+        position: absolute;
+        top:0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        
+        margin: auto;
+    }
+
+    .narrow_menu.expanded .language_switch {
+        display: grid;
+    }
+
+    .narrow_menu.expanded .link-container {
+        display: grid;
+    }
+
+    .narrow_menu.expanded .close-narrow-menu {
+        display: inline;
+    }
+    
+    .narrow_menu.expanded .open-narrow-menu {
+        display: none;
+    }
+    
+    .close-narrow-menu img {
+        fill: var(--accent-1);
+    }
+
+    .content.shrink {
+        display: none;
+    }
+
+    .link-container {
+        top:0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        position: absolute;
+
+        height: calc(100% - 62px);
+
+        display: grid;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .link-wrapper {
+        display: inline;
+    }
+
+    .link-wrapper p {
+        padding: 10px;
+        font-size: 2rem;
+        margin: 0px 0px 32px 0px;
+    }
+
+    .link-wrapper a {
+        display: block;
+        font-size: 1rem;
+        padding: 10px;
+
+    }
+
+    .tab.wide {
+        display: none;
+    }
+
+    /* 
+    .tab.narrow {
+        all: unset;
+        position: relative;
+        
+        top:0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        
+        margin: auto;
+        vertical-align: middle;
+
+        width: 50%;
+        height: 25%;
+    }
+
+    .tab.narrow > span {
+        all: unset;
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        height: 20%;
+        text-align: center;
+    }
+
+    .tablinks {
+        display: inline-block;
+        text-align: center;
+        width: fit-content;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    } */
+
+    /* .tab button {
+        all: unset;
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 40%;
+        text-align: center;
+    } */
+
+    .tab.narrow button:first-child {
+        height: 42px;
+        text-align: right;
+        width: fit-content;
+        float: right;
+        padding: 10px;
+        aspect-ratio: 1/1;
+    }
+
+    /* .tab.narrow span {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    } */
+
+    .tab.narrow span h2 {
+        margin: 0px;
+        text-align: center;
+        width: fit-content;
+    }
+
     .tabcontent.CV {
         width: 90%;
     }
 
     .cv_item > p {
         display: none;
+        width: 100%;
     }
 
     .cv_item span{
-        max-width: 100%;
+        width: 100%;
     }
 
     .cv_time_period {
@@ -624,6 +808,10 @@
     .project_section { 
         grid-template-columns: 1fr; 
     }
+
+    /* .project_section:nth-child(odd) {
+        background: var(--accent-1);
+    } */
 
     .project_video {
         width: 100%;

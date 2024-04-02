@@ -13,10 +13,10 @@
     },
     "CV_tab" : {
         "en" : "RESUME",
-        "ro" : "CV"
+        "ro" : "CURRICULUM VITAE"
     },
     "PROJECTS_tab" : {
-        "en" : "PROJECTS",
+        "en" : "MY WORK",
         "ro" : "PROIECTE"
     },
     "cv_section_1" : {
