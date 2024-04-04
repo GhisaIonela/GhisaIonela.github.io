@@ -12,7 +12,7 @@
         "ro" : "Limbă"
     },
     "CV_tab" : {
-        "en" : "RESUME",
+        "en" : "CURRICULUM VITAE",
         "ro" : "CURRICULUM VITAE"
     },
     "PROJECTS_tab" : {
@@ -52,16 +52,24 @@
         "ro" : "Experiență profesională"
     },
     "cv_s2i1" : {
-        "en" : "02.09.2023 &#9488;<br>31.01.2024 &#9496;<br> Baia Mare <br> Romania",
-        "ro" : "02.09.2023 &#9488;<br>31.01.2024 &#9496;<br> Baia Mare <br> România"
+        "en" : "09.2023 - 01.2024 <br> Baia Mare <br> Romania",
+        "ro" : "09.2023 - 01.2024 <br> Baia Mare <br> România"
     },
     "cv_s2i1p1" : {
         "en" : "Software Developer",
         "ro" : "Dezvoltator Software"
     },
     "cv_s2i1p3" : {
-        "en" : "",
-        "ro" : ""
+        "en" : "I have developed programs for various requirements, both frontend and backend.",
+        "ro" : "Am elaborat programe pentru diverse cerințe, atât pe frontend cât și pe backend."
+    },
+    "cv_s2i1p4" : {
+        "en" : "I carried out tests on the functionalities that were to go into production, through which I prevented 100% of the existing bugs from being encountered by users.",
+        "ro" : "Am realizat teste asupra funcționalităților care urmau a intra în producție, prin care am împiedicat 100% din bug-urile existente a fi întâmpinate de utilizatori."
+    },
+    "cv_s2i1p5" : {
+        "en" : "I wrote documentation for the database structure, which served as a useful reference point in the development of new functionalities.",
+        "ro" : "Am redactat documentații pentru structura bazei de date, care a servit ca un punct de referință util în dezvoltarea noilor funcționalități."
     },
     "cv_section_3" : {
         "en" : "Language skills",
@@ -75,8 +83,32 @@
         "en" : "Romanian",
         "ro" : "Română"
     },
+    "cv_s3i2p1" : {
+        "en" : "Native language",
+        "ro" : "Limbă maternă"
+    },
     "cv_section_4" : {
         "en" : "Digital skills",
         "ro" : "Compentențe digitale"
+    },
+    "cv_s4i1" : {
+        "en" : "Programming",
+        "ro" : "Programare"
+    },
+    "cv_s4iip1" : {
+        "en" : "",
+        "ro" : ""
+    },
+    "projects_app_btn" : {
+        "en" : "Applications",
+        "ro" : "Aplicații"
+    },
+    "projects_3dmod_btn" : {
+        "en" : "3D Modelling",
+        "ro" : "Modelare 3D"
+    },
+    "projects_ill_btn" : {
+        "en" : "Illustrations",
+        "ro" : "Ilustrații"
     }
 }

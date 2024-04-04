@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Ghișa Ionela's portofolio. View my resume and my work." />
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="styles_home.css">
         <title>
@@ -33,6 +34,10 @@
             </span>
 
             <div class="narrow-menu-header">
+                <span>
+                    <p>Ghișa Ionela</p>
+                    <p>ghisaionela@gmail.com</p>
+                </span>
                 <img class="open-narrow-menu" draggable="false" src="media/icons/acoordion_menu.svg" onclick="openNarrowMenu();">
                 <img class="close-narrow-menu" draggable="false" src="media/icons/close.svg" onclick="closeNarrowMenu();">
             </div>
@@ -40,8 +45,8 @@
             <div class="link-container">
                 <div class="link-wrapper">
                     <p>Ghișa Ionela</p>
-                    <a id="CV_tab" class="tablinks" onclick="open_tab(id, 'CV'); closeNarrowMenu();" text>CURRICULUM VITAE</a>
-                    <a id="PROJECTS_tab" class="tablinks" onclick="open_tab(id, 'PROJECTS'); closeNarrowMenu();" text>PROIECTE</a>
+                    <a id="CV_tab" class="tablinks cv" onclick="open_tab('cv'); closeNarrowMenu();" text>CURRICULUM VITAE</a>
+                    <a id="PROJECTS_tab" class="tablinks projects" onclick="open_tab('projects'); closeNarrowMenu();" text>PROIECTE</a>
                 </div>
             </div>
         </div>
@@ -65,8 +70,8 @@
             </span>
 
             <div class="tab wide">
-                <button id="CV_tab" class="tablinks" onclick="open_tab(id, 'CV')" text>CV</button>
-                <button id="PROJECTS_tab" class="tablinks" onclick="open_tab(id, 'PROJECTS')" text>PROIECTE</button>
+                <button id="CV_tab" class="tablinks cv" onclick="open_tab('cv')" text>CV</button>
+                <button id="PROJECTS_tab" class="tablinks projects" onclick="open_tab('projects')" text>PROIECTE</button>
                 <span style="background: var(--dark-1-3);"></span>
             </div>
         </div>
@@ -104,13 +109,13 @@
 
         <div class="content">
             <a class="dwd_cv" href="cv_ghisa_ionela_dumitrita.pdf" download="CV_GHISA_IONELA_DUMITRITA">
-                <img src="./media/pdf-file.png">
+                <img src="./media/icons/pdf-file.png">
                 <p>
                     PDF
                 </p>
             </a>
     
-            <div id="CV" class="tabcontent CV">
+            <div id="cv" class="tabcontent CV">
                 <div class="cv_section">
                     <h2 id="cv_section_1" text>Educație și formare profesională</h2>
                     <div class="cv_item">
@@ -133,17 +138,22 @@
                 <div class="cv_section">
                     <h2 id="cv_section_2" text>Experiență profesională</h2>
                     <div class="cv_item">
-                        <p id="cv_s2i1" text>02.09.2023 &#9488;<br>31.01.2024 &#9496;<br> Baia Mare <br> România</p>
+                        <p id="cv_s2i1" text>09.2023 - 01.2024 <br> Baia Mare <br> România</p>
                         <span>
                             <p id="cv_s2i1p1" text>Dezvoltator Software</p>
-                            <p class="cv_time_period">02.09.2023 - 31.01.2024 <br> Baia Mare, România</p>
+                            <p class="cv_time_period">09.2023 - 01.2024 <br> Baia Mare, România</p>
                             <p>SELECTSOFT S.R.L.</p>
-                            <p id="cv_s2i1p3" text> 
-                                - am scris cod<br>
-                                - am testat aplicatia<br>
-                                - am redactat documentații<br>
-                                - am participat la dezvoltarea aplicatiei frontend si backend
-                            </p>
+                            <ul>
+                                <li id="cv_s2i1p3" text>
+                                    Am elaborat programe pentru diverse cerințe, atât pe frontend cât și pe backend.
+                                </li>
+                                <li id="cv_s2i1p4" text>
+                                    Am realizat teste asupra funcționalităților care urmau a intra în producție, prin care am împiedicat 100% din bug-urile existente a fi întâmpinate de utilizatori.
+                                </li>
+                                <li id="cv_s2i1p5" text>
+                                    Am redactat documentații pentru structura bazei de date, care a servit ca un punct de referință util în dezvoltarea noilor funcționalități.
+                                </li>
+                            </ul>
                         </span>
                     </div>
                 </div>
@@ -152,8 +162,8 @@
                     <div class="cv_item lang">
                         <p id="cv_s3i2" text>Română</p>
                         <span>
-                            <p>
-                                limbă maternă
+                            <p id="cv_s3i2p1" text>
+                                Limbă maternă
                             </p>
                         </span>
                     </div>
@@ -161,11 +171,11 @@
                         <p id="cv_s3i1" text>Engleză</p>
                         <span>
                             <p>
-                                comprehensiune orală: <b> C1 </b><br>
-                                citit: <b>B2</b><br>
-                                exprimare scrisă: <b>B2</b><br>
-                                conversație: <b>B2</b><br>
-                                scirs: <b>B2</b>
+                                <b> C1 </b> : înțelegere orală<br>
+                                <b>B2</b> : citit<br>
+                                <b>B2</b> : exprimare scrisă: <br>
+                                <b>B2</b> : conversație: <br>
+                                <b>B2</b> : scris 
                             </p>
                         </span>
                     </div>
@@ -198,20 +208,20 @@
                 </div>
             </div>
     
-            <div id="PROJECTS" class="tabcontent projects">
+            <div id="projects" class="tabcontent projects">
                 <div class="project_categories">
-                    <button onclick="open_tab('', 'APPLICATIONS')">
-                        <h1>
+                    <button onclick="open_tab('applications')">
+                        <h1 id="projects_app_btn" text>
                             Applications
                         </h1>
                     </button>
-                    <button onclick="open_tab('', 'MODELLING3D')">
-                        <h1>
+                    <button onclick="open_tab('_3dmodelling')">
+                        <h1 id="projects_3dmod_btn" text>
                             3D Modelling
                         </h1>
                     </button>
-                    <button onclick="open_tab('', 'ILLUSTRATIONS')">
-                        <h1>
+                    <button onclick="open_tab('illustrations')">
+                        <h1 id="projects_ill_btn" text>
                             Illustrations
                         </h1>
                     </button>
@@ -220,44 +230,198 @@
     
             </div>
     
-            <div id="APPLICATIONS" class="tabcontent">
+            <div id="applications" class="tabcontent">
                 <div class="projects_container">
+                    <div class="project_section">
+                        <video class="project_video" controls>
+                            <source src="media/apps/godot_project.mp4" type="video/mp4">
+                            Your browser does not support the video tag. 
+                        </video>
+                        <div class="project_description">
+                            <h1>
+                                Sandbox world building game
+                            </h1>
+                            <p>
+                                This project was created in the Godot game engine. <br>
+                                Main features: <br>
+
+                                <ul>
+                                    <li>
+                                        ability to place blocks from a variety of options
+                                    </li>
+                                    <li>
+                                        multiple-block selection tool left-click and hold to select multiple blocks and release to see advanced options (currently on;y insert and delete)
+                                    </li>
+                                    <li>
+                                        camera controls: move back and forth, left and right by pressing WASD keys; rotate the camera around by dragging the mouse while holding the middle mouse key; zoom in and out by using the mouse wheel
+                                    </li>
+                                    <li>
+                                        slider for changing the phase of the day
+                                    </li>
+                                </ul>
+                            </p>
+
+                            <a style="display: table; color: var(--accent-1);" href="https://github.com/GhisaIonela/Godot-Project" target="_blank">
+                                <img style="display: inline-block; vertical-align: middle;" src="media/icons/github-mark-white.svg" width="42px"/>
+                                <p style="display: inline-block; vertical-align: middle; padding: 12px;">Github Page</p>
+                                <!-- <a style="display: table-cell; vertical-align: middle; color: var(--accent-1);" href="https://github.com/GhisaIonela/Godot-Project" target="_blank">Github Page</a> -->
+                            </a>
+                        </div>
+                    </div>
+
+
                     <div class="project_section cookpedia">
                         <video class="project_video" controls>
-                            <source src="media/cookpedia.mp4" type="video/mp4">
+                            <source src="media/apps/cookpedia.mp4" type="video/mp4">
                             Your browser does not support the video tag. 
                         </video>
                         <div class="project_description">
                             <h1>
                                 Cookpedia
                             </h1>
-                            <h2>
-                                This project is a webpage for posting recipes and for creating your own cookbook.
-                            </h2>
+                            <p>
+                                This project is a webpage for posting recipes and for creating your own cookbook. It was created using HTML, CSS, JavaScript and PHP.
+                                It was hosted using the XAMPP web server package. <br> Main features: <br>
+                                <ul>
+                                    <li>
+                                        Users can visit the page without an account as guests or with an account as     
+                                    </li>
+                                    <li>
+                                        Users can visit the page as a guest, in which case they will be able to view the recipes posted. <br>
+                                        By making an account, the users receive a digital cookbook in which they can add new recipes, that will be posted on the website. <br>
+                                        Admin accounts have the ability to moderate posts. They can edit, or delete posts if they see fit.
+                                    </li>
+                                </ul>
+
+                                <a style="display: table; color: var(--accent-1);" href="https://github.com/GhisaIonela/mycookbook.github.io" target="_blank">
+                                    <img style="display: inline-block; vertical-align: middle;" src="media/icons/github-mark-white.svg" width="42px"/>
+                                    <p style="display: inline-block; vertical-align: middle; padding: 12px;">Github Page</p>
+                                </a>
+                            </p>
                         </div>
                     </div>
         
                     <div class="project_section chess">
+                        <video class="project_video" controls>
+                            <source src="media/apps/chess.mp4" type="video/mp4">
+                            Your browser does not support the video tag. 
+                        </video>
+
                         <div class="project_description">
                             <h1>
                                 Chess
                             </h1>
-                            <h2>
-                                This project is a webpage for posting recipes and for creating your own cookbook.
-                            </h2>
+                            <p>
+                                This chess game was created in the Godot game engine.
+                            </p>
+
+                            <a style="display: table; color: var(--accent-1);" href="https://github.com/GhisaIonela/Chess" target="_blank">
+                                <img style="display: inline-block; vertical-align: middle;" src="media/icons/github-mark-white.svg" width="42px"/>
+                                <p style="display: inline-block; vertical-align: middle; padding: 12px;">Github Page</p>
+                            </a>
                         </div>
+                    </div>
+
+                    <div class="project_section">
                         <video class="project_video" controls>
-                            <source src="media/chess.mp4" type="video/mp4">
+                            <source src="media/apps/petrichor.mp4" type="video/mp4">
                             Your browser does not support the video tag. 
                         </video>
+
+                        <div class="project_description">
+                            <h1>
+                                Petrichor
+                            </h1>
+                            <p>
+                                This was a team project in which I created the contact page, with the ability to send an email to the Petrichor team.
+                            </p>
+
+                            <a style="display: table; color: var(--accent-1);" href="https://github.com/a-akon-n/Petrichor-frontend" target="_blank">
+                                <img style="display: inline-block; vertical-align: middle;" src="media/icons/github-mark-white.svg" width="42px"/>
+                                <p style="display: inline-block; vertical-align: middle; padding: 12px;">Github Page</p>
+                            </a>
+                        </div>
                     </div>
+
                 </div>
             </div>
     
-            <div id="MODELLING3D" class="tabcontent">
-                <div class="modeling3d_container">
+            <div id="_3dmodelling" class="tabcontent">
+                <!-- Slideshow container -->
+                <!-- <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="media/3dmodelling/1.jpg">
+                        <div class="text">Caption Text</div>
+                    </div>
+                
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="media/3dmodelling/2.jpg">
+                        <div class="text">Caption Two</div>
+                    </div>
+                
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="media/3dmodelling/3.jpg">
+                        <div class="text">Caption Three</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="media/3dmodelling/4.jpg">
+                        <div class="text">Caption Three</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 5</div>
+                        <img src="media/3dmodelling/5.jpg">
+                        <div class="text">Caption Three</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 6</div>
+                        <img src="media/3dmodelling/6.jpg">
+                        <div class="text">Caption Three</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 7</div>
+                        <img src="media/3dmodelling/7.jpg">
+                        <div class="text">Caption Three</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 8</div>
+                        <img src="media/3dmodelling/8.jpg">
+                        <div class="text">Caption Three</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 9</div>
+                        <img src="media/3dmodelling/9.jpg">
+                        <div class="text">Caption Three</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 9</div>
+                        <video class="project_video" controls>
+                            <source src="media/3dmodelling/0000-0250.mp4" type="video/mp4">
+                            Your browser does not support the video tag. 
+                        </video>
+                        <div class="text">Caption Three</div>
+                    </div>
+
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div> -->
+                
+
+                <div class="_3dmodeling_container">
+                    <img class="model3d" style="grid-column: span 2;" src="media/3dmodelling/2.jpg">
                     <img class="model3d" src="media/3dmodelling/1.jpg">
-                    <img class="model3d" src="media/3dmodelling/2.jpg">
                     <img class="model3d" src="media/3dmodelling/3.jpg">
                     <img class="model3d" src="media/3dmodelling/4.jpg">
                     <img class="model3d" src="media/3dmodelling/5.jpg">
@@ -267,23 +431,53 @@
                     <img class="model3d" src="media/3dmodelling/9.jpg">
                     <img class="model3d" src="media/3dmodelling/10.jpg">
                     <img class="model3d" src="media/3dmodelling/11.jpg">
-                    <img class="model3d" src="media/3dmodelling/CatSculp.jpg">
-                    <img class="model3d" src="media/3dmodelling/planet.jpg">
-                    <img class="model3d" src="media/3dmodelling/bucatarie_tina2copyjpg.jpg">
+                    <img class="model3d" style="grid-column: span 2;" src="media/3dmodelling/CatSculp.jpg">                    
+                    <img class="model3d" style="grid-row: span 2;" src="media/3dmodelling/planet.jpg">
+                    <video style="width: 100%;" controls>
+                        <source src="media/3dmodelling/0000-0250.mp4" type="video/mp4">
+                        Your browser does not support the video tag. 
+                    </video>
+                    <img class="model3d" src="media/3dmodelling/bucatarie.jpg"> 
                 </div>
             </div>
     
     
-            <div id="ILLUSTRATIONS" class="tabcontent">
+            <div id="illustrations" class="tabcontent">
                 <div class="illustrations_container">
                     <img class="illustration" src="media/illustrations/tshirt.png">
                     <img class="illustration" src="media/illustrations/tshirt2.png">
-                    <img class="illustration sea" src="media/illustrations/sea.jpg">
+                    <img class="illustration" style="grid-column: span 2;" src="media/illustrations/Illustration7.jpg">
+                    <img class="illustration" src="media/illustrations/bitigla my edit.png">
+                    <img class="illustration" src="media/illustrations/bitigla-i gata in alb.png">
                     <img class="illustration" src="media/illustrations/drawing3.5.jpg">
-                    <img class="illustration" src="media/illustrations/drawing3.9.jpg">
+                    <img class="illustration" src="media/illustrations/Illustration3.2.jpg">
+                    <!-- <img class="illustration" src="media/illustrations/drawing3.9.jpg"> -->
+                    <img class="illustration" style="grid-column: span 2;" src="media/illustrations/sea.jpg">
                     <img class="illustration" src="media/illustrations/PhoneBoxLogo.png">
-                    <img class="illustration" src="media/illustrations/Illustration.png">
-                    <img class="illustration" src="media/illustrations/Illustration5.png">
+                    
+
+                    <img class="illustration" src="media/illustrations/quill.png">
+                    <img class="illustration" src="media/illustrations/portrait.jpg">
+                    <img class="illustration" src="media/illustrations/girl.jpg">
+
+                    <img class="illustration" src="media/illustrations/chicken.jpg">
+                    <img class="illustration" src="media/illustrations/comic_page.jpg">
+
+                    <img class="illustration" src="media/illustrations/Illustration5.1.png">
+                    <img class="illustration" src="media/illustrations/Illustration5.3.png">
+                    <img class="illustration" src="media/illustrations/Illustration5.2.png">
+                    <img class="illustration" src="media/illustrations/Illustration5.4.png">
+
+                    <img class="illustration" src="media/illustrations/lup.png">
+                    <img class="illustration" src="media/illustrations/mata.png">
+                    <img class="illustration" src="media/illustrations/ursi.png">
+                    <img class="illustration" src="media/illustrations/buha.png">
+                    <!-- <img class="illustration" src="media/illustrations/npc.png"> -->
+                    <!-- <img class="illustration" src="media/illustrations/house.jpg"> -->
+ 
+                    <img class="illustration" src="media/illustrations/Animation2 - Copy.gif">
+                    <img class="illustration" src="media/illustrations/Animation.gif">
+                    <img class="illustration" src="media/illustrations/Animation2.gif">
                 </div>
             </div>
 

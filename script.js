@@ -7,7 +7,7 @@ $(document).ready(function(){
         text = data;
     });
     selectLanguage("ro", true);
-    open_tab("CV_tab", "CV");
+    open_tab("cv");
 });
 
 function translate_page(language) {
@@ -21,20 +21,21 @@ function translate_page(language) {
     });
 }
 
-function open_tab(button_id, tab_id) {
+function open_tab(tab_id) {
     $(".tabcontent").hide();
     $(".tab > button").removeClass('active');
 
     $("#" + tab_id).show();
 
-    if (button_id != "") {
-        $("#" + button_id).addClass("active");
-    }
+    $(".tablinks." + tab_id).addClass("active");
 
-    if (tab_id == 'CV'){
-        $(".dwd_cv").show();
-    } else {
-        $(".dwd_cv").hide();
+    switch(tab_id) {
+        case 'cv':
+            $(".dwd_cv").show();
+            break;
+        case 'projects':
+            $(".dwd_cv").hide();
+            break;
     }
 }
 
@@ -45,8 +46,8 @@ function selectLanguage(lang, is_init = false) {
     $(".language_switch").removeClass("active");
     $(container).addClass("active");
     if (!is_init) {
-        $(container + "> span:first").addClass("strech_string_" + lang);
-        setTimeout(() => { $(container + "> span:first").removeClass("strech_string_" + lang); }, 300);
+        $(container + "> span:first-child").addClass("strech_string_" + lang);
+        setTimeout(() => { $(container + "> span:first-child").removeClass("strech_string_" + lang); }, 300);
     }
 
     translate_page(lang);
@@ -61,3 +62,28 @@ function openNarrowMenu() {
     $(".narrow_menu").addClass("expanded");
     $(".content").addClass("shrink");
 }
+
+
+// let slideIndex = 1;
+// showSlides(slideIndex);
+
+// // Next/previous controls
+// function plusSlides(n) {
+//   showSlides(slideIndex += n);
+// }
+
+// // Thumbnail image controls
+// function currentSlide(n) {
+//   showSlides(slideIndex = n);
+// }
+
+// function showSlides(n) {
+//   let i;
+//   let slides = document.getElementsByClassName("mySlides");
+//   if (n > slides.length) {slideIndex = 1}
+//   if (n < 1) {slideIndex = slides.length}
+//   for (i = 0; i < slides.length; i++) {
+//     slides[i].style.display = "none";
+//   }
+//   slides[slideIndex-1].style.display = "block";
+// }
