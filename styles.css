@@ -675,34 +675,16 @@
     .narrow-menu-header {
         width: 100%; 
         height: var(--topbar-height);
-        display: grid;
-        grid-template-columns: 1fr fit-content(62px);
-    }
-
-    .narrow-menu-header span {
-        display: grid;
-        justify-content:left;
-        align-items:start;
-        padding: 12px;
-    }
-
-    .narrow-menu-header p:first-child {
-        font-size: 1.2rem;
-    }
-
-    .narrow-menu-header p:nth-child(2) {
-        font-size: .8rem;
     }
 
     .narrow-menu-header p {
-        /* width: calc(100vw - 62px); */
+        width: calc(100vw - 62px);
         padding: 0px;
         /* margin: 12px 0px; */
-        margin: 0px;
         display: inline-block;
         vertical-align: middle;
         text-align: center;
-        text-align: left;
+        font-size: 1rem;
     }
 
     .narrow-menu-header > img {
