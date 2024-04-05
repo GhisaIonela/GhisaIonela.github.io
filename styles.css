@@ -19,10 +19,10 @@
 }
 
 * {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
-.html, body {
+html, body {
     background: var(--dark-1);
     color: var(--light-1);
     transition: 1s;
@@ -416,6 +416,7 @@ li {
 .cv_item.skill > span {
    display: grid;
    row-gap: 10px;
+   padding: 10px 0px;
 }
 
 .cv_item.skill span p {
@@ -426,6 +427,10 @@ li {
     line-height: 2;
     margin: 0px;
 
+}
+
+.cv_item.skill ul {
+    margin-top: 0px
 }
 
 .cv_item.skill span p:nth-child(odd) {
@@ -579,15 +584,19 @@ li {
 .project_section {
     width: 100%;
     border-bottom: 2px solid hsla(var(--hsl-light-1), .6);
-    margin: 12px 0px;
-}
-
-.project_section {
+    /* margin: 10% 0px; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     vertical-align: middle;
-    justify-content: stretch;
+    justify-content: center;
+    align-items: start;
     width: 100%;
+    grid-auto-flow: row;
+}
+
+.project_section h1 {
+    grid-column: 2 span;
+    text-align: center;
 }
 
 /* .project_section.cookpedia {
@@ -603,15 +612,15 @@ li {
 }
 
 .project_description {
-    padding: 32px;
+    padding: 0px 32px 32px 32px;
+}
+
+.project_description p{
+    margin-top: 0px;
 }
 
 .project_description h1 {
     text-align: center;
-}
-
-.project_description a {
-    padding: 12px;
 }
 
 /* .illustrations_container {
@@ -682,7 +691,37 @@ li {
 
 } */
 
-@media only screen and (max-width: 719px) {
+@media screen and (max-width: 1200px) {
+    .project_section { 
+        grid-template-columns: 1fr; 
+    }
+
+    .project_video {
+        width: 100%;
+    }
+
+    .project_categories button {
+        min-height:  calc(var(--content-height) * .33);
+    }
+
+    .project_categories button h1 {
+        font-size: larger;
+    }
+
+    .project_description {
+        padding: 8px;
+    }
+
+    .project_description ul {
+        padding-left: 25px;
+    }
+
+    .project_section h1 {
+        grid-column: 1 span;
+    }
+}
+
+@media only screen and (max-width: 820px) {
     .wide_menu {
         display: none;
     }
@@ -872,10 +911,6 @@ li {
         grid-template-columns: 1fr; 
     }
 
-    /* .project_section:nth-child(odd) {
-        background: var(--accent-1);
-    } */
-
     .project_video {
         width: 100%;
     }
@@ -886,6 +921,14 @@ li {
 
     .project_categories button h1 {
         font-size: larger;
+    }
+
+    .project_description {
+        padding: 8px;
+    }
+
+    .project_description ul {
+        padding-left: 25px;
     }
 
 }

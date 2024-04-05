@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Ghișa Ionela's portofolio. View my resume and my work." />
         <link rel="stylesheet" href="styles.css">
@@ -231,25 +232,52 @@
                                     Microsoft Office Suite
                                 </p>
                             </span>
-
-                            <!-- <p id="cv_s4iip1" text>
-                                <b>Limbaje de programare</b><br>
-                                C++ | Java | Python | HTML | CSS | JavaScript | SQL | X86Assembly | CLisp | Prolog | GDScript<br>
-                                <b>Paradigme de programare</b><br>
-                                Programare Orientată Obiect | Programare Logică | Programare Funcțională <br>
-                                <b>Baze de date</b><br>
-                                SQL Server | PostgreSQL
-                                <b>Instrumente de control a versiunilor</b>
-                                Github
-                                <b>Microsoft Office</b>
-                                Word | Excel | Power Point
-                            </p> -->
-                        </span>
                     </div>
                     <div class="cv_item skill">
-                        <p id="cv_s4i2" text>Design digital</p>
+                        <p id="cv_s4i2" text>Graphics</p>
                         <span>
-                            <p id="cv_s4i2p1" text>Proficiență în utilizarea instrumentelor pentru grafică digitală.</p>
+                            <span>
+                                <p id="cv_s4i2p2">Digital design</p>
+                                <ul>
+                                    <li>
+                                        Proficient in creating both vector and raster graphics for a wide range of applications, including logos, banners, and print designs for merchandise like mugs, t-shirts, and stickers.
+                                    </li>
+                                    <li>
+                                        Skilled in crafting custom logos, branding elements, illustrations, and digital paintings.
+                                    </li>
+                                    <li>
+                                        Experienced in vector graphics design using Inkscape.
+                                    </li>
+                                    <li>
+                                        Proficient in raster graphics software, such as Krita and Clip Studio Paint, for digital painting and raster-based designs.
+                                    </li>
+                                    <li>
+                                        Capable of delivering high-quality designs suitable for digital and print mediums.
+                                    </li>
+                                </ul>
+                            </span>
+                            <span>
+                                <p id="cv_s4i2p2" text>Digital Painting</p>
+                                <ul>
+                                    <li>
+                                        Proficient in creating digital paintings with a focus on figures and landscapes.
+                                    </li>
+                                    <li>
+                                        Style expertise includes semirealism and cartoons.
+                                    </li>
+                                    <li>
+                                        Experienced in using Krita and Clip Studio Paint for digital painting projects.
+                                    </li>
+                                </ul>                                    
+                            </span>
+                            <span>
+                                <p>3D Modeling</p>
+                                <ul>
+                                    <li>
+                                        Proficient in 3D modeling, sculpting, texturing, UV-unwrapping, and material application using Blender and SketchUp, for creating three-dimensional objects and scenes.
+                                    </li>
+                                </ul>
+                            </span>
                         </span>
                     </div>
                 </div>
@@ -259,17 +287,17 @@
                 <div class="project_categories">
                     <button onclick="open_tab('applications')">
                         <h1 id="projects_app_btn" text>
-                            Applications
+                            Aplicații
                         </h1>
                     </button>
                     <button onclick="open_tab('_3dmodelling')">
                         <h1 id="projects_3dmod_btn" text>
-                            3D Modelling
+                            Modelare 3D
                         </h1>
                     </button>
                     <button onclick="open_tab('illustrations')">
                         <h1 id="projects_ill_btn" text>
-                            Illustrations
+                            Grafică
                         </h1>
                     </button>
                     
@@ -280,32 +308,30 @@
             <div id="applications" class="tabcontent">
                 <div class="projects_container">
                     <div class="project_section">
+                        <h1>
+                            PolyScape Creator
+                        </h1>
                         <video class="project_video" controls>
                             <source src="media/apps/godot_project.mp4" type="video/mp4">
                             Your browser does not support the video tag. 
                         </video>
                         <div class="project_description">
-                            <h1>
-                                Sandbox world building game
-                            </h1>
                             <p>
-                                This project was created in the Godot game engine. <br>
-                                Main features: <br>
-
+                                PolyScape Creator is a 3D world-building game developed using the Godot game engine. It allows users to create custom low-poly environments using a tile-based system.
                                 <ul>
                                     <li>
-                                        ability to place blocks from a variety of options
+                                        Within the tile building screen, players can adjust various properties of the tiles, including dynamic rotation for added realism. This feature enables the creation of complex structures such as stairs and slopes that seamlessly integrate into the landscape.
                                     </li>
                                     <li>
-                                        multiple-block selection tool left-click and hold to select multiple blocks and release to see advanced options (currently on;y insert and delete)
+                                        The game features a day phase slider to manipulate the atmosphere, transitioning from day to night with changing sky colors. This adds depth and immersion to the virtual environments.
                                     </li>
                                     <li>
-                                        camera controls: move back and forth, left and right by pressing WASD keys; rotate the camera around by dragging the mouse while holding the middle mouse key; zoom in and out by using the mouse wheel
+                                        Navigation controls are intuitive, allowing players to move the camera using the WASD keys, zoom in and out, and rotate the view with the middle mouse button. 
                                     </li>
                                     <li>
-                                        slider for changing the phase of the day
+                                        Tile placement is facilitated by ray-casting, ensuring precise positioning during construction. When users left-click and drag the mouse, a selection is formed for the upcoming placement of tiles once the left click is released. Conversely, right-clicking and dragging the mouse will reveal an advanced options menu for the created selection, providing players with choices to delete or insert tiles.
                                     </li>
-                                </ul>
+                                </ul>                                
                             </p>
 
                             <a style="display: table; color: var(--accent-1);" href="https://github.com/GhisaIonela/Godot-Project" target="_blank">
@@ -317,30 +343,29 @@
                     </div>
 
                     <div class="project_section">
+                        <h1>
+                            HyPhal
+                        </h1>
                         <video class="project_video" controls>
                             <source src="media/apps/HyPhal.mp4" type="video/mp4">
                             Your browser does not support the video tag. 
                         </video>
+                        
                         <div class="project_description">
-                            <h1>
-                                HyPhal
-                            </h1>
                             <p>
-                                This was a team project, created using Intellij IDEA. <br>
-                                Main features: <br>
+                                HyPhal is a mini social networking application developed by a team of two using IntelliJ IDEA with Java for the backend and frontend and PostgreSQL for the database. The app follows a client-server architecture, with the backend initially developed and packaged into a JAR file before integration with the frontend.
 
                                 <ul>
                                     <li>
-                                        ability to place blocks from a variety of options
+                                        Key features of HyPhal include user account management, password encryption for secure storage in the database, and password recovery functionality. Users can log in to their accounts, access their profile pages, and navigate to various sections such as the friends page, direct messages, and inbox.
                                     </li>
                                     <li>
-                                        multiple-block selection tool left-click and hold to select multiple blocks and release to see advanced options (currently on;y insert and delete)
+                                        On the friends page, users can browse profiles, send friend requests, accept or deny pending requests, cancel sent requests, and unfriend existing connections. The app maintains a history of friend requests and updates users in real-time on pending requests and incoming messages.                                    </li>
+                                    <li>
+                                        Direct messaging functionality allows users to communicate with friends both within and outside their friend list. Users can send messages, reply to messages, and engage in ongoing conversations.
                                     </li>
                                     <li>
-                                        camera controls: move back and forth, left and right by pressing WASD keys; rotate the camera around by dragging the mouse while holding the middle mouse key; zoom in and out by using the mouse wheel
-                                    </li>
-                                    <li>
-                                        slider for changing the phase of the day
+                                        HyPhal is designed to handle concurrent instances, ensuring smooth operation and real-time updates across multiple sessions.
                                     </li>
                                 </ul>
                             </p>
@@ -354,25 +379,29 @@
 
 
                     <div class="project_section cookpedia">
+                        <h1>
+                            Cookpedia
+                        </h1>
                         <video class="project_video" controls>
                             <source src="media/apps/cookpedia.mp4" type="video/mp4">
                             Your browser does not support the video tag. 
                         </video>
                         <div class="project_description">
-                            <h1>
-                                Cookpedia
-                            </h1>
+
                             <p>
-                                This project is a webpage for posting recipes and for creating your own cookbook. It was created using HTML, CSS, JavaScript and PHP.
-                                It was hosted using the XAMPP web server package. <br> Main features: <br>
+                                Cookpedia is a recipe management platform developed using HTML, CSS, and JavaScript for the client-side functionality. PHP was utilized for server-side scripting, while MySQL served as the database management system. The site is hosted using XAMPP, providing a reliable hosting solution for the platform.
                                 <ul>
                                     <li>
-                                        Users can visit the page without an account as guests or with an account as     
+                                        Cookpedia is designed to cater to guests, logged users, and administrators. Guests have access to the community tab, where they can view recipes posted by the Cookpedia community.   
                                     </li>
                                     <li>
-                                        Users can visit the page as a guest, in which case they will be able to view the recipes posted. <br>
-                                        By making an account, the users receive a digital cookbook in which they can add new recipes, that will be posted on the website. <br>
-                                        Admin accounts have the ability to moderate posts. They can edit, or delete posts if they see fit.
+                                        Logged users gain additional functionality, including the ability to create and manage their own cookbooks in the cookbook tab. Cookbooks allow users to add recipes, providing details such as recipe name, description, ingredients, instructions, and images of the finished dishes.
+                                    </li>
+                                    <li>
+                                        Users can also manage their account details in the account tab, where they can view account information and select from six available themes for the app's appearance.
+                                    </li>
+                                    <li>
+                                        Administrators have access to the admin dashboard tab, where they can moderate user-submitted recipes by editing or deleting them as necessary.
                                     </li>
                                 </ul>
 
@@ -385,17 +414,29 @@
                     </div>
         
                     <div class="project_section chess">
+                        <h1>
+                            Chess
+                        </h1>
                         <video class="project_video" controls>
                             <source src="media/apps/chess.mp4" type="video/mp4">
                             Your browser does not support the video tag. 
                         </video>
 
                         <div class="project_description">
-                            <h1>
-                                Chess
-                            </h1>
+
                             <p>
-                                This chess game was created in the Godot game engine.
+                                Developed within the Godot game engine, this chess game offers a player-versus-player experience.
+                                <ul>
+                                    <li>
+                                        Players can select and move pieces with a left-click, with available moves highlighted for strategic planning.
+                                    </li>
+                                    <li>
+                                        Execution of moves is seamless, requiring a simple click on the desired square.
+                                    </li>
+                                    <li>
+                                        Exclusively designed for player-versus-player matches, it serves as a platform for challenging friends or opponents to test strategic abilities on the virtual chessboard.
+                                    </li>
+                                </ul>
                             </p>
 
                             <a style="display: table; color: var(--accent-1);" href="https://github.com/GhisaIonela/Chess" target="_blank">
@@ -406,17 +447,27 @@
                     </div>
 
                     <div class="project_section">
+                        <h1>
+                            Petrichor
+                        </h1>
+
                         <video class="project_video" controls>
                             <source src="media/apps/petrichor.mp4" type="video/mp4">
                             Your browser does not support the video tag. 
                         </video>
 
                         <div class="project_description">
-                            <h1>
-                                Petrichor
-                            </h1>
+
                             <p>
-                                This was a team project in which I created the contact page, with the ability to send an email to the Petrichor team.
+                                Petrichor is a ReactJS web application, crafted as a team project to showcase the natural beauty of Romania's national parks and provide information on trails for hiking enthusiasts. As a contributor to the project, I focused on developing the contact page.
+                                <ul>
+                                    <li>
+                                        For the contact page, I utilized a combination of HTML, CSS, and JavaScript to design and implement the user interface, ensuring a seamless and visually appealing experience for visitors. 
+                                    </li>
+                                    <li>
+                                        To enable the functionality of sending emails to the Petrichor team, I integrated EmailJS, a convenient and reliable solution for email communication within web applications.
+                                    </li>
+                                </ul>
                             </p>
 
                             <a style="display: table; color: var(--accent-1);" href="https://github.com/a-akon-n/Petrichor-frontend" target="_blank">
