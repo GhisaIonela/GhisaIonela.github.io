@@ -18,6 +18,10 @@
     --content-height: calc(100vh - 62px);
 }
 
+* {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
 .html, body {
     background: var(--dark-1);
     color: var(--light-1);
@@ -382,8 +386,17 @@
     font-weight: 600;
 }
 
+li {
+    padding: 8px;
+}
+
 .cv_item.lang span {
     max-width: fit-content;
+    grid-auto-flow: row dense;
+}
+
+.cv_item.lang p {
+    margin: 8px 0px;
 }
 
 .dot {
@@ -400,8 +413,9 @@
     border: 0px;
 }
 
-.cv_item.skill span {
-    padding: 10px 10px 10px;
+.cv_item.skill > span {
+   display: grid;
+   row-gap: 10px;
 }
 
 .cv_item.skill span p {
@@ -410,6 +424,17 @@
     font-weight: inherit;
     display: inline;
     line-height: 2;
+    margin: 0px;
+
+}
+
+.cv_item.skill span p:nth-child(odd) {
+    color: var(--accent-1);
+    display: block;
+}
+
+.cv_item.skill span span {
+    border: unset;
 }
 
 .cv_item.lang span p {
