@@ -35,8 +35,9 @@
             </span>
 
             <div class="narrow-menu-header">
-                <span>
+                <span class="topbar-contact">
                     <p>Ghișa Ionela</p>
+                    <p>ghisaionela@gmail.com</p>
                 </span>
                 <img class="open-narrow-menu" draggable="false" src="media/icons/acoordion_menu.svg" onclick="openNarrowMenu();">
                 <img class="close-narrow-menu" draggable="false" src="media/icons/close.svg" onclick="closeNarrowMenu();">
@@ -70,52 +71,34 @@
             </span>
 
             <div class="tab wide">
-                <button id="CV_tab" class="tablinks cv" onclick="open_tab('cv')" text>CV</button>
+                <span class="topbar-contact">
+                    <p>Ghișa Ionela</p>
+                    <p>ghisaionela@gmail.com</p>
+                </span>
+                <button id="CV_tab" class="tablinks cv" onclick="open_tab('cv')" text>CURRICULUM VITAE</button>
                 <button id="PROJECTS_tab" class="tablinks projects" onclick="open_tab('projects')" text>PROIECTE</button>
                 <span style="background: var(--dark-1-3);"></span>
             </div>
         </div>
 
-        <!-- <div id="home_page">
-            <span class="language_switch ro">
-                <span></span>
-                <span></span>
-                <span>
-                    <img draggable="false" src="media/icons/ro.svg" onclick="selectLanguage('.language_switch:first', 'ro');">
-                </span>
-                <p id="lang_switch_ro" onclick="selectLanguage('.language_switch:first', 'ro');" text>Romanian</p>
-            </span>
-            <span class="language_switch en">
-                <span></span>
-                <span></span>
-                <span>
-                    <img draggable="false" src="media/icons/uk.svg" onclick="selectLanguage('.language_switch:last', 'en');">
-                </span>
-                <p id="lang_switch_en" onclick="selectLanguage('.language_switch:last', 'en');" text>English</p>
-            </span>
-
-            <div id="home-center-content">
-                <div id="profile_img_container">
-                    <span id="profile_img"></span>   
-                </div>
-                <h1>Ghișa Ionela</h1>
-                <nav id="main_nav">
-                    <a>CV</a>
-                    <a>Proiecte</a>
-                </nav>
-            </div>
-        </div> -->
-
 
         <div class="content">
-            <a class="dwd_cv" href="cv_ghisa_ionela_dumitrita.pdf" download="CV_GHISA_IONELA_DUMITRITA">
-                <img src="./media/icons/pdf-file.png">
-                <p>
-                    PDF
-                </p>
-            </a>
-    
             <div id="cv" class="tabcontent CV">
+                <a class="dwd_cv" href="cv_ghisa_ionela_dumitrita.pdf" download="CV_GHISA_IONELA_DUMITRITA">
+                    <img src="./media/icons/dwd.svg">
+                    <p>PDF</p>
+                </a>
+
+                <div>
+                    <h1>Ghișa Ionela</h1>
+                    <div style="display: grid; grid-template-columns: fit-content(24px) 1fr; justify-content: center; align-items: center; column-gap: 10px;">
+                        <img src="media/icons/mail.png">
+                        <p>ghisaionela@gmail.com</p>
+                        <img src="media/icons/telephone.png">
+                        <p>(+40) 0748010870</p>
+                    </div>
+                </div>
+
                 <div class="cv_section">
                     <h2 id="cv_section_1" text>Educație și formare profesională</h2>
                     <div class="cv_item">
@@ -160,37 +143,26 @@
                 <div class="cv_section">
                     <h2 id="cv_section_3" text>Competențe lingvistice</h2>
                     <div class="cv_item lang">
-                        <p id="cv_s3i2" text>Română</p>
+                        <p></p>
                         <span>
-                            <p id="cv_s3i2p1" text>
-                                Limbă maternă
+                            <p id="cv_s3i1" text>Română</p>
+
+                            <p id="cv_s3i1p1" text>
+                                limbă maternă
                             </p>
                         </span>
                     </div>
                     <div class="cv_item lang">
-                        <p id="cv_s3i1" text>Engleză</p>
-                        <span style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; justify-content: center; align-items: center; text-align: center;">
-                            <p>înțelegere orală</p>
-                            <p>citit</p>
-                            <p>exprimare scrisă</p>
-                            <p>scris</p>
+                        <p></p>
+                        <span>
+                            <p id="cv_s3i2" text>Engleză</p>
 
-                            <p>C1</p>
-                            <p>B2</p>
-                            <p>B2</p>
-                            <p>B2</p>
-                            <!-- <p>
-                                <b> C 1 </b> | înțelegere orală<br>
-                                --------------------------------<br>
-                                <b>B 2</b> | citit<br>
-                                --------------------------------<br>
-                                <b>B 2</b> | exprimare scrisă <br>
-                                --------------------------------<br>
-                                <b>B 2</b> | conversație <br>
-                                --------------------------------<br>
-                                <b>B 2</b> | scris 
-                            </p> -->
+                            <span id="cv_s3i2s1" text style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; justify-content: start; align-items: stretch; text-align: center; column-gap: 30%;">
+                                <p>acultare</p><p>scriere</p><p>citire</p><p>vorbire</p>
+                                <p>C1</p><p>B2</p><p>B2</p><p>B2</p>
+                            </span>
                         </span>
+
                     </div>
                 </div>
                 <div class="cv_section">
@@ -199,12 +171,12 @@
                         <p id="cv_s4i1" text>Programare</p>
                         <span>
                             <span>
-                                <p> Frontend Technologies:</p>
+                                <p id="cv_s4i1s1p1" text>Tehnologii de frontend:</p>
                                 <p> HTML | CSS | JavaScript</p>
                             </span>
 
                             <span>
-                                <p> Backend Technologies:</p>
+                                <p id="cv_s4i1s2p1" text>Tehnologii de backend:</p>
                                 <p>
                                     C++ |
                                     Java |
@@ -218,7 +190,7 @@
                             </span>
 
                             <span>
-                                <p> Database Management:</p>
+                                <p id="cv_s4i1s3p1" text>Gestionarea bazelor de date:</p>
                                 <p> 
                                     PostgreSQL |
                                     SQL Server
@@ -226,7 +198,7 @@
                             </span>
 
                             <span>
-                                <p> Additional Tools: </p>
+                                <p id="cv_s4i1s4p1" text>Instrumente suplimentare:</p>
                                 <p>
                                     GitHub |
                                     Microsoft Office Suite
@@ -234,47 +206,35 @@
                             </span>
                     </div>
                     <div class="cv_item skill">
-                        <p id="cv_s4i2" text>Graphics</p>
+                        <p id="cv_s4i2" text>Grafică</p>
                         <span>
                             <span>
-                                <p id="cv_s4i2p2">Digital design</p>
+                                <p id="cv_s4i2p1" text>Digital design</p>
                                 <ul>
-                                    <li>
-                                        Proficient in creating both vector and raster graphics for a wide range of applications, including logos, banners, and print designs for merchandise like mugs, t-shirts, and stickers.
+                                    <li id="cv_s4i2p1l1" text>
+                                        Proficiență în crearea de grafică vectorială și grafică raster pentru o gamă largă de aplicații, inclusiv logo-uri, bannere, ilustrații, picturi digitale și modele de imprimare pentru produse precum căni, tricouri și autocolante.
                                     </li>
-                                    <li>
-                                        Skilled in crafting custom logos, branding elements, illustrations, and digital paintings.
-                                    </li>
-                                    <li>
-                                        Experienced in vector graphics design using Inkscape.
-                                    </li>
-                                    <li>
-                                        Proficient in raster graphics software, such as Krita and Clip Studio Paint, for digital painting and raster-based designs.
-                                    </li>
-                                    <li>
-                                        Capable of delivering high-quality designs suitable for digital and print mediums.
+                                    <li id="cv_s4i2p1l2" text>
+                                        Experiență în utilizarea programelor Krita și Clip Studio Paint pentru grafică raster și Inkscape pentru grafică vectorială.
                                     </li>
                                 </ul>
                             </span>
                             <span>
                                 <p id="cv_s4i2p2" text>Digital Painting</p>
                                 <ul>
-                                    <li>
-                                        Proficient in creating digital paintings with a focus on figures and landscapes.
+                                    <li id="cv_s4i2p2l1" text>
+                                        Proficiență în crearea de picturi digitale, cu accent pe caractere și peisaje.
                                     </li>
-                                    <li>
-                                        Style expertise includes semirealism and cartoons.
-                                    </li>
-                                    <li>
-                                        Experienced in using Krita and Clip Studio Paint for digital painting projects.
+                                    <li id="cv_s4i2p2l2" text>
+                                        Experiență în utilizarea programelor Krita și Clip Studio Paint pentru pictură digitală.
                                     </li>
                                 </ul>                                    
                             </span>
                             <span>
-                                <p>3D Modeling</p>
+                                <p id="cv_s4i2p3" text>3D Modeling</p>
                                 <ul>
-                                    <li>
-                                        Proficient in 3D modeling, sculpting, texturing, UV-unwrapping, and material application using Blender and SketchUp, for creating three-dimensional objects and scenes.
+                                    <li id="cv_s4i2p3l1" text>
+                                        Proficiență în modelare 3D și cunoștințe în sculptură, texturizare, UV-unwrapping și aplicare de materiale folosind Blender și SketchUp, pentru crearea de obiecte și scene tridimensionale.
                                     </li>
                                 </ul>
                             </span>
@@ -285,19 +245,19 @@
     
             <div id="projects" class="tabcontent projects">
                 <div class="project_categories">
-                    <button onclick="open_tab('applications')">
+                    <button onclick="open_tab('applications')" style="background-image: url('./media/apps/apps_banner.png');">
                         <h1 id="projects_app_btn" text>
                             Aplicații
                         </h1>
                     </button>
-                    <button onclick="open_tab('_3dmodelling')">
+                    <button onclick="open_tab('_3dmodelling')" style="background-image: url('./media/3dmodelling/2.jpg');">
                         <h1 id="projects_3dmod_btn" text>
                             Modelare 3D
                         </h1>
                     </button>
-                    <button onclick="open_tab('illustrations')">
+                    <button onclick="open_tab('illustrations')" style="background-image: url('./media/illustrations/tshirt2.png');">
                         <h1 id="projects_ill_btn" text>
-                            Grafică
+                            Grafică / Ilustrații
                         </h1>
                     </button>
                     
@@ -316,28 +276,27 @@
                             Your browser does not support the video tag. 
                         </video>
                         <div class="project_description">
-                            <p>
-                                PolyScape Creator is a 3D world-building game developed using the Godot game engine. It allows users to create custom low-poly environments using a tile-based system.
-                                <ul>
-                                    <li>
-                                        Within the tile building screen, players can adjust various properties of the tiles, including dynamic rotation for added realism. This feature enables the creation of complex structures such as stairs and slopes that seamlessly integrate into the landscape.
-                                    </li>
-                                    <li>
-                                        The game features a day phase slider to manipulate the atmosphere, transitioning from day to night with changing sky colors. This adds depth and immersion to the virtual environments.
-                                    </li>
-                                    <li>
-                                        Navigation controls are intuitive, allowing players to move the camera using the WASD keys, zoom in and out, and rotate the view with the middle mouse button. 
-                                    </li>
-                                    <li>
-                                        Tile placement is facilitated by ray-casting, ensuring precise positioning during construction. When users left-click and drag the mouse, a selection is formed for the upcoming placement of tiles once the left click is released. Conversely, right-clicking and dragging the mouse will reveal an advanced options menu for the created selection, providing players with choices to delete or insert tiles.
-                                    </li>
-                                </ul>                                
+                            <p id="proj_p1" text>
+                                PolyScape Creator este un joc de construit lumi în 3D, dezvoltat folosind motorul grafic Godot. Acesta le permite utilizatorilor să creeze lumi personalizate folosind un sistem bazat pe cuburi.
                             </p>
+                            <ul>
+                                <li id="proj_p1l1" text>
+                                    În cadrul ecranului de editare a cuburilor, jucătorii pot ajusta diverse proprietăți, inclusiv rotația dinamică în funcție de unghiul camerei. Această funcție permite crearea de structuri complexe precum scări și pante care se integrează perfect în peisaj.
+                                </li>
+                                <li id="proj_p1l2" text>
+                                    Jocul dispune de un slider pentru manipularea atmosferei, trecând de la zi la noapte cu schimbarea culorilor cerului. Aceasta adaugă profunzime și imersiune în mediul virtual.
+                                </li>
+                                <li id="proj_p1l3" text>
+                                    Controalele de navigare sunt intuitive, permițând jucătorilor să își mute camera folosind tastele WASD, să dea zoom in și zoom out cu rotița mouse-ului și să rotească camera cu butonul mijlociu al mouse-ului.
+                                </li>
+                                <li id="proj_p1l4" text>
+                                    Plasarea cuburilor este facilitată prin ray-casting, asigurând poziționarea precisă în timpul construcției. Atunci când utilizatorii apasă click stânga și mișcă mouse-ul, se formează o selecție pentru următoarea plasare a cuburilor. Plasarea se realizează odată cu eliberarea click-ului. În schimb, apăsarea click dreapta și mișcarea mouse-ului va afișa un meniu de opțiuni avansate pentru selecția creată, oferind jucătorilor posibilitatea de a șterge sau insera cuburi.
+                                </li>
+                            </ul>  
 
                             <a style="display: table; color: var(--accent-1);" href="https://github.com/GhisaIonela/Godot-Project" target="_blank">
                                 <img style="display: inline-block; vertical-align: middle;" src="media/icons/github-mark-white.svg" width="42px"/>
-                                <p style="display: inline-block; vertical-align: middle; padding: 12px;">Github Page</p>
-                                <!-- <a style="display: table-cell; vertical-align: middle; color: var(--accent-1);" href="https://github.com/GhisaIonela/Godot-Project" target="_blank">Github Page</a> -->
+                                <p id="git_proj_link" text style="display: inline-block; vertical-align: middle; padding: 12px;">Pagina GitHub</p>
                             </a>
                         </div>
                     </div>
@@ -352,27 +311,26 @@
                         </video>
                         
                         <div class="project_description">
-                            <p>
-                                HyPhal is a mini social networking application developed by a team of two using IntelliJ IDEA with Java for the backend and frontend and PostgreSQL for the database. The app follows a client-server architecture, with the backend initially developed and packaged into a JAR file before integration with the frontend.
-
-                                <ul>
-                                    <li>
-                                        Key features of HyPhal include user account management, password encryption for secure storage in the database, and password recovery functionality. Users can log in to their accounts, access their profile pages, and navigate to various sections such as the friends page, direct messages, and inbox.
-                                    </li>
-                                    <li>
-                                        On the friends page, users can browse profiles, send friend requests, accept or deny pending requests, cancel sent requests, and unfriend existing connections. The app maintains a history of friend requests and updates users in real-time on pending requests and incoming messages.                                    </li>
-                                    <li>
-                                        Direct messaging functionality allows users to communicate with friends both within and outside their friend list. Users can send messages, reply to messages, and engage in ongoing conversations.
-                                    </li>
-                                    <li>
-                                        HyPhal is designed to handle concurrent instances, ensuring smooth operation and real-time updates across multiple sessions.
-                                    </li>
-                                </ul>
+                            <p id="proj_p2" text>
+                                HyPhal este o mini aplicație de socializare, dezvoltată de o echipă de două persoane, folosind Java și Intellij IDEA pentru backend, ScenBuilder pentru frontend și PostgreSQL pentru baza de date. Aplicația urmează o arhitectură client-server, cu backend-ul inițial dezvoltat și ambalat într-un fișier JAR înainte de integrarea cu frontend-ul.
                             </p>
+                            <ul>
+                                <li id="proj_p2l1" text>
+                                    Caracteristicile cheie ale lui HyPhal includ gestionarea conturilor de utilizator, criptarea parolelor pentru stocare sigură în baza de date și funcționalitatea de recuperare a parolei. Utilizatorii pot să se autentifice, să acceseze paginile lor de profil și să navigheze către diverse secțiuni precum pagina de prieteni, mesaje directe și inbox.
+                                </li>
+                                <li>
+                                    On the friends page, users can browse profiles, send friend requests, accept or deny pending requests, cancel sent requests, and unfriend existing connections. The app maintains a history of friend requests and updates users in real-time on pending requests and incoming messages.                                    </li>
+                                <li id="proj_p2l2" text>
+                                    Funcționalitatea de mesagerie directă le permite utilizatorilor să comunice cu prietenii atât în interiorul, cât și în afara listei lor de prieteni. Utilizatorii pot trimite mesaje și pot da reply la mesajele primite.
+                                </li>
+                                <li id="proj_p2l3" text>
+                                    HyPhal este proiectat pentru a gestiona instanțe concurente, asigurând o operare fluidă și actualizări în timp real pe mai multe sesiuni.
+                                </li>
+                            </ul>
 
                             <a style="display: table; color: var(--accent-1);" href="https://github.com/GhisaIonela/HyPhal" target="_blank">
                                 <img style="display: inline-block; vertical-align: middle;" src="media/icons/github-mark-white.svg" width="42px"/>
-                                <p style="display: inline-block; vertical-align: middle; padding: 12px;">Github Page</p>
+                                <p id="git_proj_link" text id="git_proj_link" text style="display: inline-block; vertical-align: middle; padding: 12px;">Pagina GitHub</p>
                             </a>
                         </div>
                     </div>
@@ -388,28 +346,29 @@
                         </video>
                         <div class="project_description">
 
-                            <p>
-                                Cookpedia is a recipe management platform developed using HTML, CSS, and JavaScript for the client-side functionality. PHP was utilized for server-side scripting, while MySQL served as the database management system. The site is hosted using XAMPP, providing a reliable hosting solution for the platform.
-                                <ul>
-                                    <li>
-                                        Cookpedia is designed to cater to guests, logged users, and administrators. Guests have access to the community tab, where they can view recipes posted by the Cookpedia community.   
-                                    </li>
-                                    <li>
-                                        Logged users gain additional functionality, including the ability to create and manage their own cookbooks in the cookbook tab. Cookbooks allow users to add recipes, providing details such as recipe name, description, ingredients, instructions, and images of the finished dishes.
-                                    </li>
-                                    <li>
-                                        Users can also manage their account details in the account tab, where they can view account information and select from six available themes for the app's appearance.
-                                    </li>
-                                    <li>
-                                        Administrators have access to the admin dashboard tab, where they can moderate user-submitted recipes by editing or deleting them as necessary.
-                                    </li>
-                                </ul>
-
-                                <a style="display: table; color: var(--accent-1);" href="https://github.com/GhisaIonela/mycookbook.github.io" target="_blank">
-                                    <img style="display: inline-block; vertical-align: middle;" src="media/icons/github-mark-white.svg" width="42px"/>
-                                    <p style="display: inline-block; vertical-align: middle; padding: 12px;">Github Page</p>
-                                </a>
+                            <p id="proj_p3" text>
+                                Cookpedia este o platformă de gestionare a rețetelor dezvoltată folosind HTML, CSS și JavaScript pentru partea de client, PHP pentru partea de server și MySQL pentru sistemul de gestionare a bazelor de date. Site-ul este găzduit folosind XAMPP.
                             </p>
+                                
+                            <ul>
+                                <li id="proj_p3l1" text>
+                                    Cookpedia este proiectat pentru a fi folosit de oaspeți, utilizatori înregistrați și administratori. Oaspeții au acces la secțiunea de comunitate, unde pot vizualiza rețetele postate de comunitatea Cookpedia.   
+                                </li>
+                                <li id="proj_p3l2" text>
+                                    Utilizatorii înregistrați obțin funcționalități suplimentare, inclusiv capacitatea de a crea și gestiona propriile cărți de bucate în secțiunea de carte de bucate. Cărțile de bucate permit utilizatorilor să adauge rețete, oferind detalii precum numele rețetei, descrierea, ingredientele, instrucțiunile și imagini ale felurilor de mâncare gata preparate.
+                                </li>
+                                <li id="proj_p3l3" text>
+                                    Utilizatorii pot de asemenea să vizualizeze informațiile contului și pot selecta una din cele șase teme disponibile pentru aspectul aplicației.
+                                </li>
+                                <li id="proj_p3l4" text>
+                                    Administratorii au acces la secțiunea de tabloul de bord al administratorului, unde pot modera rețetele trimise de utilizatori prin editarea sau ștergerea acestora, după necesitate.
+                                </li>
+                            </ul>
+
+                            <a style="display: table; color: var(--accent-1);" href="https://github.com/GhisaIonela/mycookbook.github.io" target="_blank">
+                                <img style="display: inline-block; vertical-align: middle;" src="media/icons/github-mark-white.svg" width="42px"/>
+                                <p id="git_proj_link" text style="display: inline-block; vertical-align: middle; padding: 12px;">Pagina GitHub</p>
+                            </a>
                         </div>
                     </div>
         
@@ -424,24 +383,22 @@
 
                         <div class="project_description">
 
-                            <p>
-                                Developed within the Godot game engine, this chess game offers a player-versus-player experience.
-                                <ul>
-                                    <li>
-                                        Players can select and move pieces with a left-click, with available moves highlighted for strategic planning.
-                                    </li>
-                                    <li>
-                                        Execution of moves is seamless, requiring a simple click on the desired square.
-                                    </li>
-                                    <li>
-                                        Exclusively designed for player-versus-player matches, it serves as a platform for challenging friends or opponents to test strategic abilities on the virtual chessboard.
-                                    </li>
-                                </ul>
+                            <p id="proj_p4" text>
+                                Dezvoltat în cadrul motorului grafic Godot, acest joc de șah oferă o experiență de joc jucător-versus-jucător.
                             </p>
+   
+                            <ul>
+                                <li id="proj_p4l1" text>
+                                    Jucătorii pot selecta și muta piesele cu un clic stânga, cu mutările disponibile evidențiate pentru planificare strategică.
+                                </li>
+                                <li id="proj_p4l2" text>
+                                    Execuția mutărilor este fluidă, necesitând doar un simplu clic pe pătratul dorit.
+                                </li>
+                            </ul>
 
                             <a style="display: table; color: var(--accent-1);" href="https://github.com/GhisaIonela/Chess" target="_blank">
                                 <img style="display: inline-block; vertical-align: middle;" src="media/icons/github-mark-white.svg" width="42px"/>
-                                <p style="display: inline-block; vertical-align: middle; padding: 12px;">Github Page</p>
+                                <p id="git_proj_link" text style="display: inline-block; vertical-align: middle; padding: 12px;">Pagina GitHub</p>
                             </a>
                         </div>
                     </div>
@@ -458,21 +415,22 @@
 
                         <div class="project_description">
 
-                            <p>
-                                Petrichor is a ReactJS web application, crafted as a team project to showcase the natural beauty of Romania's national parks and provide information on trails for hiking enthusiasts. As a contributor to the project, I focused on developing the contact page.
-                                <ul>
-                                    <li>
-                                        For the contact page, I utilized a combination of HTML, CSS, and JavaScript to design and implement the user interface, ensuring a seamless and visually appealing experience for visitors. 
-                                    </li>
-                                    <li>
-                                        To enable the functionality of sending emails to the Petrichor team, I integrated EmailJS, a convenient and reliable solution for email communication within web applications.
-                                    </li>
-                                </ul>
+                            <p id="proj_p5" text>
+                                Petrichor este o aplicație web ReactJS, creată ca proiect de echipă pentru a evidenția frumusețea naturală a parcurilor naționale din România și pentru a oferi informații despre traseele pentru pasionații de drumeții. În calitate de contributor la proiect, m-am concentrat pe dezvoltarea paginii de contact.
                             </p>
+
+                            <ul>
+                                <li id="proj_p5l1" text>
+                                    Pentru pagina de contact, am utilizat o combinație de HTML, CSS și JavaScript pentru a proiecta și implementa interfața cu utilizatorul, asigurând o experiență fluidă și plăcută din punct de vedere vizual pentru vizitatori.
+                                </li>
+                                <li id="proj_p5l2" text>
+                                    Pentru a permite funcționalitatea de trimitere a emailurilor către echipa Petrichor, am integrat EmailJS, o soluție convenabilă și fiabilă pentru comunicarea prin email în aplicațiile web.
+                                </li>
+                            </ul>
 
                             <a style="display: table; color: var(--accent-1);" href="https://github.com/a-akon-n/Petrichor-frontend" target="_blank">
                                 <img style="display: inline-block; vertical-align: middle;" src="media/icons/github-mark-white.svg" width="42px"/>
-                                <p style="display: inline-block; vertical-align: middle; padding: 12px;">Github Page</p>
+                                <p id="git_proj_link" text style="display: inline-block; vertical-align: middle; padding: 12px;">Pagina GitHub</p>
                             </a>
                         </div>
                     </div>
@@ -481,77 +439,6 @@
             </div>
     
             <div id="_3dmodelling" class="tabcontent">
-                <!-- Slideshow container -->
-                <!-- <div class="slideshow-container">
-
-                    <div class="mySlides fade">
-                        <div class="numbertext">1 / 3</div>
-                        <img src="media/3dmodelling/1.jpg">
-                        <div class="text">Caption Text</div>
-                    </div>
-                
-                    <div class="mySlides fade">
-                        <div class="numbertext">2 / 3</div>
-                        <img src="media/3dmodelling/2.jpg">
-                        <div class="text">Caption Two</div>
-                    </div>
-                
-                    <div class="mySlides fade">
-                        <div class="numbertext">3 / 3</div>
-                        <img src="media/3dmodelling/3.jpg">
-                        <div class="text">Caption Three</div>
-                    </div>
-
-                    <div class="mySlides fade">
-                        <div class="numbertext">3 / 4</div>
-                        <img src="media/3dmodelling/4.jpg">
-                        <div class="text">Caption Three</div>
-                    </div>
-
-                    <div class="mySlides fade">
-                        <div class="numbertext">3 / 5</div>
-                        <img src="media/3dmodelling/5.jpg">
-                        <div class="text">Caption Three</div>
-                    </div>
-
-                    <div class="mySlides fade">
-                        <div class="numbertext">3 / 6</div>
-                        <img src="media/3dmodelling/6.jpg">
-                        <div class="text">Caption Three</div>
-                    </div>
-
-                    <div class="mySlides fade">
-                        <div class="numbertext">3 / 7</div>
-                        <img src="media/3dmodelling/7.jpg">
-                        <div class="text">Caption Three</div>
-                    </div>
-
-                    <div class="mySlides fade">
-                        <div class="numbertext">3 / 8</div>
-                        <img src="media/3dmodelling/8.jpg">
-                        <div class="text">Caption Three</div>
-                    </div>
-
-                    <div class="mySlides fade">
-                        <div class="numbertext">3 / 9</div>
-                        <img src="media/3dmodelling/9.jpg">
-                        <div class="text">Caption Three</div>
-                    </div>
-
-                    <div class="mySlides fade">
-                        <div class="numbertext">3 / 9</div>
-                        <video class="project_video" controls>
-                            <source src="media/3dmodelling/0000-0250.mp4" type="video/mp4">
-                            Your browser does not support the video tag. 
-                        </video>
-                        <div class="text">Caption Three</div>
-                    </div>
-
-
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                </div> -->
-                
 
                 <div class="_3dmodeling_container">
                     <img class="model3d" style="grid-column: span 2;" src="media/3dmodelling/2.jpg">

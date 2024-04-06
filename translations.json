@@ -76,16 +76,20 @@
         "ro" : "Compentențe lingvistice"
     },
     "cv_s3i1" : {
-        "en" : "English",
-        "ro" : "Engleză"
-    },
-    "cv_s3i2" : {
         "en" : "Romanian",
         "ro" : "Română"
     },
-    "cv_s3i2p1" : {
-        "en" : "Native language",
-        "ro" : "Limbă maternă"
+    "cv_s3i1p1" : {
+        "en" : "native language",
+        "ro" : "limbă maternă"
+    },
+    "cv_s3i2" : {
+        "en" : "English",
+        "ro" : "Engleză"
+    },
+    "cv_s3i2s1" : {
+        "en" : "<p>listening</p><p>writing</p><p>reading</p><p>speaking</p><p>C1</p><p>B2</p><p>B2</p><p>B2</p>",
+        "ro" : "<p>acultare</p><p>scriere</p><p>citire</p><p>vorbire</p><p>C1</p><p>B2</p><p>B2</p><p>B2</p>"
     },
     "cv_section_4" : {
         "en" : "Digital skills",
@@ -95,9 +99,57 @@
         "en" : "Programming",
         "ro" : "Programare"
     },
-    "cv_s4iip1" : {
-        "en" : "",
-        "ro" : ""
+    "cv_s4i1s1p1" : {
+        "en" : "Frontend Technologies:",
+        "ro" : "Tehnologii de frontend:"
+    },
+    "cv_s4i1s2p1" : {
+        "en" : "Backend Technologies:",
+        "ro" : "Tehnologii de backend:"
+    },
+    "cv_s4i1s3p1" : {
+        "en" : "Database Management:",
+        "ro" : "Gestionarea bazelor de date:"
+    },
+    "cv_s4i1s4p1" : {
+        "en" : "Additional Tools:",
+        "ro" : "Instrumente suplimentare:"
+    },
+    "cv_s4i2" : {
+        "en" : "Graphics",
+        "ro" : "Grafică"
+    },
+    "cv_s4i2p1" : {
+        "en" : "Digital Design",
+        "ro" : "Design digital"
+    },
+    "cv_s4i2p1l1" : {
+        "en" : "Proficient in creating both vector and raster graphics for a wide range of applications, including logos, banners, illustrations, digital paintings and print designs for merchandise like mugs, t-shirts, and stickers.",
+        "ro" : "Proficiență în crearea de grafică vectorială și grafică raster pentru o gamă largă de aplicații, inclusiv logo-uri, bannere, ilustrații, picturi digitale și modele de imprimare pentru produse precum căni, tricouri și autocolante."
+    },
+    "cv_s4i2p1l2" : {
+        "en" : "Experienced in using Krita and Clip Studio Paint for raster graphics and Inkscape for vector graphics.",
+        "ro" : "Experiență în utilizarea programelor Krita și Clip Studio Paint pentru grafică raster și Inkscape pentru grafică vectorială."
+    },
+    "cv_s4i2p2l1" : {
+        "en" : "Proficient in creating digital paintings with a focus on characters and landscapes.",
+        "ro" : "Proficiență în crearea de picturi digitale, cu accent pe caractere și peisaje."
+    },
+    "cv_s4i2p2l2" : {
+        "en" : "Experienced in utilizing Krita and Clip Studio Paint for digital painting.",
+        "ro" : "Experiență în utilizarea programelor Krita și Clip Studio Paint pentru pictură digitală."
+    },
+    "cv_s4i2p3l1" : {
+        "en" : "Proficient in 3D modeling and knowledge in sculpting, texturing, UV-unwrapping and material application using Blender and SketchUp, for creating three-dimensional objects and scenes.",
+        "ro" : "Proficiență în modelare 3D și cunoștințe în sculptură, texturizare, UV-unwrapping și aplicare de materiale folosind Blender și SketchUp, pentru crearea de obiecte și scene tridimensionale."
+    },
+    "cv_s4i2p2" : {
+        "en" : "Digital Painting",
+        "ro" : "Desen digital"
+    },
+    "cv_s4i2p3" : {
+        "en" : "3D Modeling",
+        "ro" : "Modelare 3D"
     },
     "projects_app_btn" : {
         "en" : "Applications",
@@ -108,7 +160,91 @@
         "ro" : "Modelare 3D"
     },
     "projects_ill_btn" : {
-        "en" : "Graphics",
-        "ro" : "Grafică"
+        "en" : "Graphics / Illustrations",
+        "ro" : "Grafică / Ilustrații"
+    },
+    "proj_p1" : {
+        "en": "PolyScape Creator is a 3D world-building game developed using the Godot game engine. It allows users to create custom low-poly environments using a tile-based system.",
+        "ro" : "PolyScape Creator este un joc de construit lumi în 3D, dezvoltat folosind motorul grafic Godot. Acesta le permite utilizatorilor să creeze lumi personalizate folosind un sistem bazat pe cuburi."
+    },
+    "proj_p1l1" : {
+        "en" : "Within the tile building screen, players can adjust various properties of the tiles, including dynamic rotation based on the camera angle.. This feature enables the creation of complex structures such as stairs and slopes that seamlessly integrate into the landscape.",
+        "ro" : "În cadrul ecranului de editare a cuburilor, jucătorii pot ajusta diverse proprietăți, inclusiv rotația dinamică în funcție de unghiul camerei. Această funcție permite crearea de structuri complexe precum scări și pante care se integrează perfect în peisaj."
+    },
+    "proj_p1l2" : {
+        "en" : "The game features a day phase slider to manipulate the atmosphere, transitioning from day to night with changing sky colors. This adds depth and immersion to the virtual environments.",
+        "ro" : "Jocul dispune de un slider pentru manipularea atmosferei, trecând de la zi la noapte cu schimbarea culorilor cerului. Aceasta adaugă profunzime și imersiune în mediul virtual."
+    },
+    "proj_p1l3" : {
+        "en" : "Navigation controls are intuitive, allowing players to move the camera using the WASD keys, zoom in and out with the mouse wheel, and rotate the view with the middle mouse button.",
+        "ro" : "Controalele de navigare sunt intuitive, permițând jucătorilor să își mute camera folosind tastele WASD, să dea zoom in și zoom out cu rotița mouse-ului și să rotească camera cu butonul mijlociu al mouse-ului."
+    },
+    "proj_p1l4" : {
+        "en" : "Tile placement is facilitated by ray-casting, ensuring precise positioning during construction. When users left-click and drag the mouse, a selection is formed for the upcoming placement of tiles. The placement is made once the left click is released. Conversely, right-clicking and dragging the mouse will reveal an advanced options menu for the created selection, providing players with choices to delete or insert tiles.",
+        "ro" : "Plasarea cuburilor este facilitată prin ray-casting, asigurând poziționarea precisă în timpul construcției. Atunci când utilizatorii apasă click stânga și mișcă mouse-ul, se formează o selecție pentru următoarea plasare a cuburilor. Plasarea se realizează odată cu eliberarea click-ului. În schimb, apăsarea click dreapta și mișcarea mouse-ului va afișa un meniu de opțiuni avansate pentru selecția creată, oferind jucătorilor posibilitatea de a șterge sau insera cuburi."
+    },
+    "proj_p2" : {
+        "en" : "HyPhal is a mini social networking application developed by a team of two using Java and Intellij IDEA for the backend, ScenBuilder for the frontend and PostgreSQL as the database . The app follows a client-server architecture, with the backend initially developed and packaged into a JAR file before integration with the frontend.",
+        "ro" : "HyPhal este o mini aplicație de socializare, dezvoltată de o echipă de două persoane, folosind Java și Intellij IDEA pentru backend, ScenBuilder pentru frontend și PostgreSQL pentru baza de date. Aplicația urmează o arhitectură client-server, cu backend-ul inițial dezvoltat și ambalat într-un fișier JAR înainte de integrarea cu frontend-ul."
+    },
+    "proj_p2l1" : {
+        "en" : "Key features of HyPhal include user account management, password encryption for secure storage in the database, and password recovery functionality. Users can log in to their accounts, access their profile pages, and navigate to various sections such as the friends page, direct messages, and inbox.",
+        "ro" : "Caracteristicile cheie ale lui HyPhal includ gestionarea conturilor de utilizator, criptarea parolelor pentru stocare sigură în baza de date și funcționalitatea de recuperare a parolei. Utilizatorii pot să se autentifice, să acceseze paginile lor de profil și să navigheze către diverse secțiuni precum pagina de prieteni, mesaje directe și inbox."
+    },
+    "proj_p2l2" : {
+        "en" : "Direct messaging functionality allows users to communicate with friends both within and outside their friend list. Users can send messages, reply to messages, and engage in ongoing conversations.",
+        "ro" : "Funcționalitatea de mesagerie directă le permite utilizatorilor să comunice cu prietenii atât în interiorul, cât și în afara listei lor de prieteni. Utilizatorii pot trimite mesaje și pot da reply la mesajele primite."
+    },
+    "proj_p2l3" : {
+        "en" : "HyPhal is designed to handle concurrent instances, ensuring smooth operation and real-time updates across multiple sessions.",
+        "ro" : "HyPhal este proiectat pentru a gestiona instanțe concurente, asigurând o operare fluidă și actualizări în timp real pe mai multe sesiuni."
+    },
+    "proj_p3" : {
+        "en" : "Cookpedia is a recipe management platform developed using HTML, CSS, and JavaScript for the client-side, PHP for server-side and MySQL served as the database management system. The site is hosted using XAMPP.",
+        "ro" : "Cookpedia este o platformă de gestionare a rețetelor dezvoltată folosind HTML, CSS și JavaScript pentru partea de client, PHP pentru partea de server și MySQL pentru sistemul de gestionare a bazelor de date. Site-ul este găzduit folosind XAMPP."
+    },
+    "proj_p3l1" : {
+        "en" : "Cookpedia is designed to be used by guests, logged users, and administrators. Guests have access to the community tab, where they can view recipes posted by the Cookpedia community.",
+        "ro" : "Cookpedia este proiectat pentru a fi folosit de oaspeți, utilizatori înregistrați și administratori. Oaspeții au acces la secțiunea de comunitate, unde pot vizualiza rețetele postate de comunitatea Cookpedia."
+    },
+    "proj_p3l2" : {
+        "en" : "Logged users gain additional functionality, including the ability to create and manage their own cookbooks in the cookbook tab. Cookbooks allow users to add recipes, providing details such as recipe name, description, ingredients, instructions, and images of the finished dishes.",
+        "ro" : "Utilizatorii înregistrați obțin funcționalități suplimentare, inclusiv capacitatea de a crea și gestiona propriile cărți de bucate în secțiunea de carte de bucate. Cărțile de bucate permit utilizatorilor să adauge rețete, oferind detalii precum numele rețetei, descrierea, ingredientele, instrucțiunile și imagini ale felurilor de mâncare gata preparate."
+    },
+    "proj_p3l3" : {
+        "en" : "Users can also view their account details and select one of the six available themes for the app's appearance.",
+        "ro" : "Utilizatorii pot de asemenea să vizualizeze informațiile contului și pot selecta una din cele șase teme disponibile pentru aspectul aplicației."
+    },
+    "proj_p3l4" : {
+        "en" : "Administrators have access to the admin dashboard tab, where they can moderate user-submitted recipes by editing or deleting them as necessary.",
+        "ro" : "Administratorii au acces la secțiunea de tabloul de bord al administratorului, unde pot modera rețetele trimise de utilizatori prin editarea sau ștergerea acestora, după necesitate."
+    },
+    "proj_p4" : {
+        "en" : "Developed within the Godot game engine, this chess game offers a player-versus-player experience.",
+        "ro" : "Dezvoltat în cadrul motorului grafic Godot, acest joc de șah oferă o experiență de joc jucător-versus-jucător."
+    },
+    "proj_p4l1" : {
+        "en" : "Players can select and move pieces with a left-click, with available moves highlighted for strategic planning.",
+        "ro" : "Jucătorii pot selecta și muta piesele cu un clic stânga, cu mutările disponibile evidențiate pentru planificare strategică."
+    },
+    "proj_p4l2" : {
+        "en" : "Execution of moves is seamless, requiring a simple click on the desired square.",
+        "ro" : "Execuția mutărilor este fluidă, necesitând doar un simplu clic pe pătratul dorit."
+    },
+    "proj_p5" : {
+        "en" : "Petrichor is a ReactJS web application, crafted as a team project to showcase the natural beauty of Romania's national parks and provide information on trails for hiking enthusiasts. As a contributor to the project, I focused on developing the contact page.",
+        "ro" : "Petrichor este o aplicație web ReactJS, creată ca proiect de echipă pentru a evidenția frumusețea naturală a parcurilor naționale din România și pentru a oferi informații despre traseele pentru pasionații de drumeții. În calitate de contributor la proiect, m-am concentrat pe dezvoltarea paginii de contact."
+    },
+    "proj_p5l1" : {
+        "en" : "For the contact page, I utilized a combination of HTML, CSS, and JavaScript to design and implement the user interface, ensuring a seamless and visually appealing experience for visitors.",
+        "ro" : "Pentru pagina de contact, am utilizat o combinație de HTML, CSS și JavaScript pentru a proiecta și implementa interfața cu utilizatorul, asigurând o experiență fluidă și plăcută din punct de vedere vizual pentru vizitatori."
+    },
+    "proj_p5l2" : {
+        "en" : "To enable the functionality of sending emails to the Petrichor team, I integrated EmailJS, a convenient and reliable solution for email communication within web applications.",
+        "ro" : "Pentru a permite funcționalitatea de trimitere a emailurilor către echipa Petrichor, am integrat EmailJS, o soluție convenabilă și fiabilă pentru comunicarea prin email în aplicațiile web."
+    },
+    "git_proj_link" : {
+        "en" : "GitHub Page",
+        "ro" : "Pagina GitHub"
     }
 }
