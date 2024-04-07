@@ -640,8 +640,9 @@ li {
     .narrow-menu-header {
         width: 100%; 
         height: var(--topbar-height);
-        display: grid;
-        grid-template-columns: 1fr fit-content(64px);
+        /* display: grid;
+        grid-template-columns: 1fr fit-content(64px); */
+        display: inline;
     }
 
     .narrow-menu-header p {
@@ -658,6 +659,7 @@ li {
         width: 42px; 
         padding: 10px; 
         z-index: 100000;
+        float: right;
     }
 
     .narrow_menu .language_switch {
