@@ -779,6 +779,10 @@ li {
         margin: 0px
     }
 
+    .cv_section h2 {
+        margin-left: 0px;
+    }
+
     .cv_item {
         grid-template-columns: 1fr;
     }
