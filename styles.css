@@ -20,7 +20,7 @@
 }
 
 * {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
 html, body {
@@ -118,7 +118,7 @@ html, body {
 }
 
 .language_switch.ro {
-    z-index: 10;
+    z-index: 11;
     transform: translateX(30px);
 }
 
@@ -127,7 +127,7 @@ html, body {
 }
 
 .language_switch.en span{
-    height: 100px;
+    height: 130px;
 }
 
 .language_switch:hover{
@@ -189,9 +189,9 @@ html, body {
 }
 
 @keyframes strech_string_en {
-    0%   {min-height: 100px;}
-    50%  {min-height: 142px;}
-    100% {min-height: 100px;}
+    0%   {min-height: 130px;}
+    50%  {min-height: 170px;}
+    100% {min-height: 130px;}
 }
 /*#endregion Language switch*/
 
@@ -290,6 +290,10 @@ html, body {
     padding: 0px 10px 0px;
 }
 
+.cv_section h2 {
+    margin-left: 140px;
+}
+
 .cv_time_period {
     display: none;
 }
@@ -300,9 +304,9 @@ html, body {
     grid-template-columns: fit-content(150px) 1fr;
 }
 
-.cv_item > p{
+.cv_item > p {
     display: inline-block;
-    padding: 0px 10px 0px;
+    padding: 0px 10px 0px 0px;
     min-width: 130px;
     text-align: right;
     vertical-align : top;
@@ -645,12 +649,22 @@ li {
     }
 
     .narrow_menu .close-narrow-menu {
+        all: unset;
         display: none;
         cursor: pointer;
+        width: 42px;
+        height: 42px;
+        float: right;
+        padding: 10px;
     }
 
     .narrow_menu .open-narrow-menu {
+        all: unset;
         cursor: pointer;
+        width: 42px;
+        height: 42px;
+        float: right;
+        padding: 10px;
     }
 
     .narrow_menu.expanded {
@@ -682,10 +696,12 @@ li {
 
     .narrow_menu.expanded .close-narrow-menu {
         display: inline;
+        z-index: 11;
     }
     
     .narrow_menu.expanded .open-narrow-menu {
         display: none;
+        z-index: 10;
     }
 
     .tablinks {
