@@ -258,5 +258,9 @@
     "adress" : {
         "en" : "45 Mărășești St., Baia Mare, Romania",
         "ro" : "Str. Mărășești Nr. 45, Baia Mare, România"
+    },
+    "adress-narrow" : {
+        "en" : "45 Mărășești St., Baia Mare, Romania",
+        "ro" : "Str. Mărășești Nr. 45, Baia Mare, România"
     }
 }
