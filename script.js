@@ -22,6 +22,11 @@ function translate_page(language) {
 }
 
 function open_tab(tab_id) {
+    // window.scroll({
+    //     top: 0,  
+    //     behavior: 'smooth' 
+    // });
+
     $(".tabcontent").hide();
     $(".tab > button").removeClass('active');
 
@@ -37,6 +42,8 @@ function open_tab(tab_id) {
             $(".dwd_cv").hide();
             break;
     }
+
+    window.scrollTo(0, 0);
 }
 
 function selectLanguage(lang, is_init = false) {
@@ -51,6 +58,17 @@ function selectLanguage(lang, is_init = false) {
     }
 
     translate_page(lang);
+
+    switch(lang) {
+        case "ro" :
+            $(".dwd_cv").attr("href", "Ghișa Ionela Curriculum Vitae Ro.pdf");
+            $(".dwd_cv").attr("download", "CV_GHISA_IONELA_RO");
+            break;
+        case "en" :
+            $(".dwd_cv").attr('href', "Ghișa Ionela Curriculum Vitae En.pdf");
+            $(".dwd_cv").attr("download", "CV_GHISA_IONELA_EN");
+            break;
+    }
 }
 
 function closeNarrowMenu() {

@@ -57,14 +57,6 @@ html, body {
     display: inline;
 }
 
-/* .wide_menu .language_switch {
-    transform: translateY(62px);
-}
-
-.wide_menu .language_switch:first-child {
-    transform: translateX(30px) translateY(62px);
-} */
-
 .wide_menu .tab {
     height: var(--topbar-height);
     position: fixed;
@@ -83,7 +75,7 @@ html, body {
     width: fit-content;
     user-select: none; 
     vertical-align: middle;
-    left: 0;
+    left: 10px;
 }
 
 .language_switch > * {
@@ -265,7 +257,6 @@ html, body {
 
 .content {
     margin: 62px 170px 0px 170px;
-
 }
   
 .tabcontent {
@@ -279,6 +270,56 @@ html, body {
 .tabcontent.CV {
     min-width: min-content;
     max-width: 900px;
+    padding-bottom: 60px;
+
+}
+
+/* .cv-header {
+    margin-left: 105px;
+    border-left: 2px solid var(--accent-2);
+} */
+
+.cv-header {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border-bottom: 2px solid var(--accent-2);
+}
+
+.cv-header h1 {
+    /* margin-left: 105px; */
+    text-align: center;
+    padding: 20px;
+}
+
+.cv-header a{
+    color: var(--light-2);
+    text-decoration: none;
+    display: flex;
+}
+
+.cv-header a, .cv-header p {
+    padding: 0px 4px;
+    width: fit-content;
+}
+
+.cv-header a img {
+    padding: 0px 4px;
+}
+
+.cv-header-info {
+    display: grid; 
+    grid-template-columns: repeat(2, fit-content(24px) fit-content(300px)); 
+    justify-content: center; 
+    align-items: center;
+    width: fit-content;
+    /* padding: 0px 15%; */
+}
+
+.cv-header-info.narrow {
+    display: none;
 }
 
 @keyframes fadeEffect {
@@ -291,7 +332,7 @@ html, body {
 }
 
 .cv_section h2 {
-    margin-left: 140px;
+    margin-left: 105px;
 }
 
 .cv_time_period {
@@ -301,13 +342,13 @@ html, body {
 .cv_item {
     margin: auto;
     display: grid;
-    grid-template-columns: fit-content(150px) 1fr;
+    grid-template-columns: fit-content(100px) 1fr;
 }
 
 .cv_item > p {
     display: inline-block;
     padding: 0px 10px 0px 0px;
-    min-width: 130px;
+    min-width: 100px;
     text-align: right;
     vertical-align : top;
     margin: 18px 0px;
@@ -356,23 +397,30 @@ li {
     margin-bottom: 0px;
 }
 
-.cv_item.skill > span p:nth-child(odd) {
+/* .cv_item.skill > span p:nth-child(odd) {
     color: var(--accent-1);
     display: block;
-}
+} */
 
 .cv_item.skill span span {
     border: unset;
     padding: unset;
 }
 
+.skill-category p:not(:first-child) {
+    color: var(--light-2);
+}
+
+.skill-category p:not(:first-child)::first-line {
+    color: var(--accent-2);
+}
+
 .dwd_cv {
     border-radius: 4%;
-    right: 20%;
-    bottom: 5%;
+    right: 12px;
     padding: 10px;
     transition: 200ms;
-    position: fixed;
+    position: absolute;
     float: left;
     float: inline-end;
     z-index: 3;
@@ -382,8 +430,7 @@ li {
     vertical-align: middle;
     text-decoration-line: none;
     font-weight: bold;
-    /* transform: translateY(-100%); */
-    margin: 10px;
+    margin: 21.44px 0px;
 }
 
 .dwd_cv img {
@@ -505,6 +552,10 @@ li {
     text-align: center;
 }
 
+.project_description a img{
+    width: 32px;
+}
+
 /* .illustrations_container {
     display: inline;
     justify-content: stretch;
@@ -611,7 +662,6 @@ li {
     }
 
     .narrow-menu-header {
-        width: 100%; 
         height: var(--topbar-height);
         /* display: grid;
         grid-template-columns: 1fr fit-content(64px); */
@@ -619,7 +669,6 @@ li {
     }
 
     .narrow-menu-header p {
-        width: calc(100vw - 62px);
         padding: 0px;
         /* margin: 12px 0px; */
         display: inline-block;
@@ -697,12 +746,12 @@ li {
 
     .narrow_menu.expanded .close-narrow-menu {
         display: inline;
-        z-index: 11;
+        z-index: 12;
     }
     
     .narrow_menu.expanded .open-narrow-menu {
         display: none;
-        z-index: 10;
+        z-index: 11;
     }
 
     .tablinks {
@@ -769,7 +818,6 @@ li {
         margin: 62px 0px 0px 0px;
     }
 
-
     .tabcontent.CV {
         width: 90%;
         padding-bottom: 170px;
@@ -777,6 +825,23 @@ li {
 
     .tabcontent.projects {
         margin: 0px
+    }
+
+    .cv-header {
+        flex-direction: column;
+    }
+
+    .cv-header h1{
+        margin-left: 0px;
+    }
+
+    .cv-header-info.wide {
+        display: none;
+    }
+
+    .cv-header-info.narrow{
+        display: grid;
+        grid-template-columns: fit-content(24px) 1fr;
     }
 
     .cv_section h2 {
@@ -824,16 +889,19 @@ li {
         padding-left: 25px;
     }
 
-    .dwd_cv {
-        right: 2%;
-    }
-
     .topbar-contact {
         display: grid;
     }
 
     .topbar-contact p {
         width: fit-content;
+    }
+
+    .dwd_cv {
+        position: fixed;
+        left: auto;
+        right: 12px;
+        bottom: 12px;
     }
 
 }

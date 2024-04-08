@@ -52,8 +52,8 @@
         "ro" : "Experiență profesională"
     },
     "cv_s2i1" : {
-        "en" : "09.2023 - 01.2024 <br> Baia Mare <br> Romania",
-        "ro" : "09.2023 - 01.2024 <br> Baia Mare <br> România"
+        "en" : "Sep 2023 -<br> Jan 2024 <br> Baia Mare <br> Romania",
+        "ro" : "Sep 2023 -<br> Ian 2024 <br> Baia Mare <br> România"
     },
     "cv_s2i1p1" : {
         "en" : "Software Developer",
@@ -73,7 +73,7 @@
     },
     "cv_section_3" : {
         "en" : "Language skills",
-        "ro" : "Compentențe lingvistice"
+        "ro" : "Competențe lingvistice"
     },
     "cv_s3i1" : {
         "en" : "Romanian",
@@ -124,24 +124,24 @@
         "ro" : "Design digital"
     },
     "cv_s4i2p1l1" : {
-        "en" : "Proficient in creating both vector and raster graphics for a wide range of applications, including logos, banners, illustrations, digital paintings and print designs for merchandise like mugs, t-shirts, and stickers.",
-        "ro" : "Proficiență în crearea de grafică vectorială și grafică raster pentru o gamă largă de aplicații, inclusiv logo-uri, bannere, ilustrații, picturi digitale și modele de imprimare pentru produse precum căni, tricouri și autocolante."
+        "en" : "Vector and raster graphics for a wide range of applications, including logos, banners, illustrations, digital paintings and print designs for merchandise like mugs, t-shirts, and stickers.",
+        "ro" : "Grafică vectorială și grafică raster pentru o gamă largă de aplicații, inclusiv logo-uri, bannere, ilustrații, picturi digitale și modele de imprimare pentru produse precum căni, tricouri și autocolante."
     },
     "cv_s4i2p1l2" : {
         "en" : "Experienced in using Krita and Clip Studio Paint for raster graphics and Inkscape for vector graphics.",
         "ro" : "Experiență în utilizarea programelor Krita și Clip Studio Paint pentru grafică raster și Inkscape pentru grafică vectorială."
     },
     "cv_s4i2p2l1" : {
-        "en" : "Proficient in creating digital paintings with a focus on characters and landscapes.",
-        "ro" : "Proficiență în crearea de picturi digitale, cu accent pe caractere și peisaje."
+        "en" : "Digital paintings with a focus on characters and landscapes.",
+        "ro" : "Picturi digitale, cu accent pe caractere și peisaje."
     },
     "cv_s4i2p2l2" : {
         "en" : "Experienced in utilizing Krita and Clip Studio Paint for digital painting.",
         "ro" : "Experiență în utilizarea programelor Krita și Clip Studio Paint pentru pictură digitală."
     },
     "cv_s4i2p3l1" : {
-        "en" : "Proficient in 3D modeling and knowledge in sculpting, texturing, UV-unwrapping and material application using Blender and SketchUp, for creating three-dimensional objects and scenes.",
-        "ro" : "Proficiență în modelare 3D și cunoștințe în sculptură, texturizare, UV-unwrapping și aplicare de materiale folosind Blender și SketchUp, pentru crearea de obiecte și scene tridimensionale."
+        "en" : "3D modeling and knowledge in sculpting, texturing, UV-unwrapping and material application using Blender and SketchUp, for creating three-dimensional objects and scenes.",
+        "ro" : "Modelare 3D și cunoștințe în sculptură, texturizare, UV-unwrapping și aplicare de materiale folosind Blender și SketchUp, pentru crearea de obiecte și scene tridimensionale."
     },
     "cv_s4i2p2" : {
         "en" : "Digital Painting",
@@ -246,5 +246,17 @@
     "git_proj_link" : {
         "en" : "GitHub Page",
         "ro" : "Pagina GitHub"
+    },
+    "cv_s4p4" : {
+        "en" : "Digital Design and Illustrations",
+        "ro" : "Design digital și ilustrații"
+    },
+    "cv_s4p5" : {
+        "en" : "3D Modelling",
+        "ro" : "Modelare 3D"
+    },
+    "adress" : {
+        "en" : "45 Mărășești St., Baia Mare, Romania",
+        "ro" : "Str. Mărășești Nr. 45, Baia Mare, România"
     }
 }

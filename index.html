@@ -46,9 +46,9 @@
             <button class="open-narrow-menu" onclick="openNarrowMenu();">
                 <img draggable="false" src="media/icons/acoordion_menu.svg">
             </button>
-            <button class="close-narrow-menu" onclick="closeNarrowMenu();">
+            <!-- <button class="close-narrow-menu" onclick="closeNarrowMenu();">
                 <img draggable="false" src="media/icons/close.svg">
-            </button>
+            </button> -->
 
             <div class="link-container">
                 <div class="link-wrapper">
@@ -91,18 +91,57 @@
 
         <div class="content">
             <div id="cv" class="tabcontent CV">
-                <a class="dwd_cv" href="cv_ghisa_ionela_dumitrita.pdf" download="CV_GHISA_IONELA_DUMITRITA">
+                <a class="dwd_cv" href="Ghișa Ionela Curriculum Vitae Ro.pdf" download="CV_GHISA_IONELA_RO">
                     <img src="./media/icons/dwd.svg">
                     <p>PDF</p>
                 </a>
 
-                <div>
+                <div class="cv-header">
                     <h1>Ghișa Ionela</h1>
-                    <div style="display: grid; grid-template-columns: fit-content(24px) 1fr; justify-content: center; align-items: center; column-gap: 10px;">
-                        <img src="media/icons/mail.png">
+                    <div class="cv-header-info wide">
+                        <img src="media/icons/email.svg">
                         <p>ghisaionela@gmail.com</p>
-                        <img src="media/icons/telephone.png">
+
+                        <img width="24px" src="media/icons/github-mark-white.svg">
+                        <a href="https://github.com/GhisaIonela/" target="_blank">
+                            <p>GitHub</p>
+                            <img src="media/icons/link.svg" width="18px">
+                        </a>
+
+                        <img src="media/icons/telephone.svg">
                         <p>(+40) 0748010870</p>
+
+                        <img src="media/icons/linkedInl.svg">
+                        <a href="https://www.linkedin.com/in/ionela-ghi%C8%99a-937168203/" target="_blank">
+                            <p>LinkedIn</p>
+                            <img src="media/icons/link.svg" width="18px">
+                        </a>
+
+                        <img src="media/icons/place.svg">
+                        <p id="adress" text>Str. Mărășești Nr. 45, Baia Mare, România</p>
+                    </div>
+
+                    <div class="cv-header-info narrow">
+                        <img src="media/icons/email.svg">
+                        <p>ghisaionela@gmail.com</p>
+
+                        <img src="media/icons/telephone.svg">
+                        <p>(+40) 0748010870</p>
+
+                        <img width="24px" src="media/icons/github-mark-white.svg">
+                        <a href="https://github.com/GhisaIonela/" target="_blank">
+                            <p>GitHub</p>
+                            <img src="media/icons/link.svg" width="18px">
+                        </a>
+
+                        <img src="media/icons/linkedInl.svg">
+                        <a href="https://www.linkedin.com/in/ionela-ghi%C8%99a-937168203/" target="_blank">
+                            <p>LinkedIn</p>
+                            <img src="media/icons/link.svg" width="18px">
+                        </a>
+
+                        <img src="media/icons/place.svg">
+                        <p>Str. Mărășești Nr. 45, Baia Mare, România</p>
                     </div>
                 </div>
 
@@ -128,7 +167,7 @@
                 <div class="cv_section">
                     <h2 id="cv_section_2" text>Experiență profesională</h2>
                     <div class="cv_item">
-                        <p id="cv_s2i1" text>09.2023 - 01.2024 <br> Baia Mare <br> România</p>
+                        <p id="cv_s2i1" text>Sep 2023 - <br> Ian 2024 <br> Baia Mare <br> România</p>
                         <span>
                             <p id="cv_s2i1p1" text>Dezvoltator Software</p>
                             <p class="cv_time_period">09.2023 - 01.2024 <br> Baia Mare, România</p>
@@ -175,53 +214,102 @@
                 <div class="cv_section">
                     <h2 id="cv_section_4" text>Competențe digitale</h2>
                     <div class="cv_item skill">
-                        <!-- <p id="cv_s4i1" text>Programare</p> -->
                         <p></p>
                         <span>
-                            <span>
-                                <p id="cv_s4i1s1p1" text>Tehnologii de frontend:</p>
-                                <p> HTML | CSS | JavaScript</p>
-                            </span>
+                            <span class="skill-category">
+                                <p id="cv_s4i1" text>Programare</p>
+                                <p> 
+                                    Frontend
+                                    <br>
+                                    HTML 
+                                    &nbsp;&bull;&nbsp;
+                                    CSS
+                                    &nbsp;&bull;&nbsp;
+                                    JavaScript
+                                </p>
 
-                            <span>
-                                <p id="cv_s4i1s2p1" text>Tehnologii de backend:</p>
                                 <p>
-                                    C++ |
-                                    Java |
-                                    Python |
-                                    SQL |
-                                    X86 Assembly |
-                                    CLisp |
-                                    Prolog |
+                                    Backend
+                                    <br>
+                                    C++
+                                    &nbsp;&bull;&nbsp;
+                                    Java
+                                    &nbsp;&bull;&nbsp;
+                                    Python
+                                    &nbsp;&bull;&nbsp;
+                                    PHP
+                                    &nbsp;&bull;&nbsp;
+                                    SQL
+                                    &nbsp;&bull;&nbsp;
+                                    X86 Assembly
+                                    &nbsp;&bull;&nbsp;
+                                    CLisp
+                                    &nbsp;&bull;&nbsp;
                                     GDScript
                                 </p>
                             </span>
 
                             <span>
-                                <p id="cv_s4i1s3p1" text>Gestionarea bazelor de date:</p>
+                                <p id="cv_s4i1s3p1" text>Gestionarea bazelor de date</p>
                                 <p> 
-                                    PostgreSQL |
+                                    PostgreSQL
+                                    &nbsp;&bull;&nbsp;
                                     SQL Server
+                                    &nbsp;&bull;&nbsp;
+                                    MySQL
                                 </p>
                             </span>
 
-                            <span>
+                            <!-- <span>
                                 <p id="cv_s4i1s4p1" text>Instrumente suplimentare:</p>
                                 <p>
                                     GitHub |
                                     Microsoft Office Suite
                                 </p>
+                            </span> -->
+
+                            <span>
+                                <p>GitHub</p>
                             </span>
+
+                            <span>
+                                <p id="cv_s4p4" text>Design digital și Ilustrații</p>
+                                <p>
+                                    Krita
+                                    &nbsp;&bull;&nbsp;
+                                    Clip Studio Pain
+                                    &nbsp;&bull;&nbsp;
+                                    Inkscape</p>
+                            </span>
+
+                            <span>
+                                <p id="cv_s4p5" text>Modelare 3D</p>
+                                <p>
+                                    Blender
+                                    &nbsp;&bull;&nbsp;
+                                    SketchUp
+                                </p>
+                            </span>
+
+                            <span>
+                                <p>Microsoft Office Suite</p>
+                                <p>
+                                    Word
+                                    &nbsp;&bull;&nbsp;
+                                    Excel
+                                    &nbsp;&bull;&nbsp;
+                                    Power Point</p>
+                            </span>
+                            
                     </div>
-                    <div class="cv_item skill">
-                        <!-- <p id="cv_s4i2" text>Grafică</p> -->
+                    <!-- <div class="cv_item skill">
                         <p></p>
                         <span>
                             <span>
-                                <p id="cv_s4i2p1" text>Digital design</p>
+                                <p id="cv_s4i2p1" text>Design digital</p>
                                 <ul>
                                     <li id="cv_s4i2p1l1" text>
-                                        Proficiență în crearea de grafică vectorială și grafică raster pentru o gamă largă de aplicații, inclusiv logo-uri, bannere, ilustrații, picturi digitale și modele de imprimare pentru produse precum căni, tricouri și autocolante.
+                                        Creare de grafică vectorială și grafică raster pentru o gamă largă de aplicații, inclusiv logo-uri, bannere, ilustrații, picturi digitale și modele de imprimare pentru produse precum căni, tricouri și autocolante.
                                     </li>
                                     <li id="cv_s4i2p1l2" text>
                                         Experiență în utilizarea programelor Krita și Clip Studio Paint pentru grafică raster și Inkscape pentru grafică vectorială.
@@ -229,10 +317,10 @@
                                 </ul>
                             </span>
                             <span>
-                                <p id="cv_s4i2p2" text>Digital Painting</p>
+                                <p id="cv_s4i2p2" text>Desen digital</p>
                                 <ul>
                                     <li id="cv_s4i2p2l1" text>
-                                        Proficiență în crearea de picturi digitale, cu accent pe caractere și peisaje.
+                                        Picturi digitale, cu accent pe caractere și peisaje.
                                     </li>
                                     <li id="cv_s4i2p2l2" text>
                                         Experiență în utilizarea programelor Krita și Clip Studio Paint pentru pictură digitală.
@@ -240,15 +328,15 @@
                                 </ul>                                    
                             </span>
                             <span>
-                                <p id="cv_s4i2p3" text>3D Modeling</p>
+                                <p id="cv_s4i2p3" text>Modelare 3D</p>
                                 <ul>
                                     <li id="cv_s4i2p3l1" text>
-                                        Proficiență în modelare 3D și cunoștințe în sculptură, texturizare, UV-unwrapping și aplicare de materiale folosind Blender și SketchUp, pentru crearea de obiecte și scene tridimensionale.
+                                        Modelare 3D și cunoștințe în sculptură, texturizare, UV-unwrapping și aplicare de materiale folosind Blender și SketchUp, pentru crearea de obiecte și scene tridimensionale.
                                     </li>
                                 </ul>
                             </span>
                         </span>
-                    </div>
+                    </div> -->
                 </div>
             </div>
     

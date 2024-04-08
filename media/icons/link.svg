@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="24px"
+   height="24px"
+   viewBox="0 0 24 24"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   sodipodi:docname="link.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="true"
+     inkscape:zoom="17.437501"
+     inkscape:cx="4.2724013"
+     inkscape:cy="15.770609"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid182"
+       spacingx="0.8"
+       spacingy="0.8"
+       originx="0"
+       originy="0" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g3337-6"
+       transform="matrix(-0.90282581,-0.90282581,0.81241245,-0.81241245,13.286099,33.171851)"
+       style="stroke:#f5fdf9;stroke-opacity:0.67450982">
+      <path
+         id="rect911-1-7"
+         style="fill:none;stroke:#f5fdf9;stroke-width:1.694;stroke-linecap:round;stroke-opacity:0.67450982"
+         d="m 9.9648435,8.5332198 v -3.199999 c 0,-1.3296 1.0703995,-2.4 2.4000005,-2.4 1.3296,0 2.4,1.0704 2.4,2.4 V 11.73322 c 0,1.3296 -1.080538,1.964078 -2.410138,1.964078"
+         sodipodi:nodetypes="cssssc" />
+      <path
+         id="rect911-1"
+         style="fill:none;stroke:#f5fdf9;stroke-width:1.694;stroke-linecap:round;stroke-opacity:0.67450982"
+         d="m 9.9648435,8.5332198 v -3.199999 c 0,-1.3296 1.0703995,-2.4 2.4000005,-2.4 1.3296,0 2.4,1.0704 2.4,2.4 V 11.73322 c 0,1.3296 -1.080538,1.964078 -2.410138,1.964078"
+         sodipodi:nodetypes="cssssc"
+         transform="rotate(180,12.32447,12.160517)" />
+    </g>
+  </g>
+</svg>
