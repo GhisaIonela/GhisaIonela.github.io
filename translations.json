@@ -89,7 +89,7 @@
     },
     "cv_s3i2s1" : {
         "en" : "<p>listening</p><p>writing</p><p>reading</p><p>speaking</p><p>C1</p><p>B2</p><p>B2</p><p>B2</p>",
-        "ro" : "<p>acultare</p><p>scriere</p><p>citire</p><p>vorbire</p><p>C1</p><p>B2</p><p>B2</p><p>B2</p>"
+        "ro" : "<p>ascultare</p><p>scriere</p><p>citire</p><p>vorbire</p><p>C1</p><p>B2</p><p>B2</p><p>B2</p>"
     },
     "cv_section_4" : {
         "en" : "Digital skills",
