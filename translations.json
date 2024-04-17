@@ -64,8 +64,8 @@
         "ro" : "Am elaborat programe pentru diverse cerințe, atât pe frontend cât și pe backend."
     },
     "cv_s2i1p4" : {
-        "en" : "I carried out tests on the functionalities that were to go into production, through which I prevented 100% of the existing bugs from being encountered by users.",
-        "ro" : "Am realizat teste asupra funcționalităților care urmau a intra în producție, prin care am împiedicat 100% din bug-urile existente a fi întâmpinate de utilizatori."
+        "en" : "I carried out tests on the functionalities under development, preventing 100% of existing bugs from being encountered by users.",
+        "ro" : "Am realizat teste asupra funcționalităților aflate în dezvoltare, prin care am împiedicat 100% din bug-urile existente de a fi întâmpinate de utilizatori."
     },
     "cv_s2i1p5" : {
         "en" : "I wrote documentation for the database structure, which served as a useful reference point in the development of new functionalities.",
